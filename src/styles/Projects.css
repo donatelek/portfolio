@@ -75,7 +75,6 @@ section.Projects ul li.a {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  display: none;
   -webkit-transition: 0.7s ease border, 2.5s ease background-size;
   transition: 0.7s ease border, 2.5s ease background-size;
 }
