@@ -2,6 +2,7 @@
   "name": "officialportfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://donatelek.github.io/portfolio",
   "dependencies": {
     "no-scroll": "^2.1.1",
     "react": "^16.8.6",
