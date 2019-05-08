@@ -1,0 +1,39 @@
+footer {
+  background-color: #1f1d1e;
+  position: relative;
+  height: 600px;
+}
+
+footer .icons {
+  position: absolute;
+  right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 20px;
+  font-size: 50px;
+  color: white;
+}
+
+@media (max-width: 730px) {
+  footer .icons {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+footer .icons i {
+  cursor: pointer;
+  margin-left: 30px;
+  color: #f0e4d6;
+}
+
+footer .icons .fa-github-square {
+  margin-left: 0;
+}
+/*# sourceMappingURL=Footer.css.map */

@@ -1,0 +1,129 @@
+@mixin desktopIcons {
+    @media (max-width: 1240px) {
+        @content;
+    }
+}
+
+@mixin tabletIcons {
+    @media (max-width: 1020px) {
+        @content;
+    }
+}
+
+@mixin mobileIcons {
+    @media (max-width: 670px) {
+        @content;
+    }
+}
+
+@mixin M-mobileIcons {
+    @media (max-width: 605px) {
+        @content;
+    }
+}
+
+@mixin S-mobileIcons {
+    @media (max-width: 435px) {
+        @content;
+    }
+}
+
+section.Aboutme {
+    // background-color: pink;
+    position: relative;
+    height: 800px;
+    text-align: center;
+
+
+
+    ul {
+        display: flex;
+        // background-color: red;
+        justify-content: space-between;
+        // width: 1100px;
+        margin: 50px auto 0 auto;
+        max-width: 1800px;
+        margin-left: 10%;
+
+        margin-right: 10%;
+
+        @include desktopIcons {
+            margin-left: 0;
+            margin-right: 0;
+            margin: 50px auto 0 auto;
+
+        }
+
+        @include tabletIcons {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        @include mobileIcons {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        @include M-mobileIcons {
+            height: 150px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @include S-mobileIcons {
+            // justify-content: space-around;
+        }
+
+        li {
+            height: 100px;
+            list-style-type: none;
+
+            @include tabletIcons {
+                height: 60px;
+            }
+
+            @include M-mobileIcons {
+                height: 50px;
+                width: 20%;
+            }
+
+            img {
+                height: 100px;
+
+                @include tabletIcons {
+                    height: 60px;
+                }
+
+                @include M-mobileIcons {
+                    height: 50px;
+
+                }
+
+                @include S-mobileIcons {
+                    height: 38px;
+                }
+            }
+        }
+    }
+
+    h1 {
+        font-size: 40px;
+        letter-spacing: 3px;
+        padding: 50px 0;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    div {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        padding: 25px 0;
+    }
+
+    h2 {
+        // background-color: red;
+        margin-top: 50px;
+    }
+}

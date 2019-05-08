@@ -1,0 +1,129 @@
+@mixin mini-tablet {
+    @media (max-width:550px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (max-width:440px) {
+        @content;
+    }
+}
+
+div.contact {
+    // background-color: pink;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 85%;
+    color: rgb(240, 228, 214);
+
+    .loader {
+        // background-color: red;
+        margin-left: 50%;
+        top: 50%;
+        margin-top: -32px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 26px;
+        height: 26px;
+
+    }
+
+    .loader::after {
+        content: " ";
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 1px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        border-color: rgb(51, 41, 16) transparent rgb(51, 41, 16) transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+    }
+
+    .sent {
+        color: rgb(1, 138, 1);
+        // display: inline-block;
+        // background-color: red;
+        width: 130px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: -27px;
+        font-size: 15px;
+    }
+
+    @keyframes lds-dual-ring {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    h1 {
+        font-size: 40px;
+        letter-spacing: 3px;
+        padding: 50px 0 25px 0;
+
+        @include phone {
+            font-size: 33px;
+        }
+    }
+
+    h2 {
+        padding: 15px 0;
+        font-size: 17px;
+
+        @include phone {
+            font-size: 15px;
+        }
+    }
+
+    input[type=text] {
+        background-color: transparent;
+        padding: 5px;
+        color: rgb(240, 228, 214);
+        border: 1px solid rgb(189, 155, 69);
+        text-align: center;
+
+        @include phone {
+            width: 150px;
+        }
+    }
+
+    textarea {
+        color: rgb(240, 228, 214);
+        width: 500px;
+        height: 200px;
+        border: 1px solid rgb(189, 155, 69);
+        background-color: transparent;
+        text-align: center;
+
+        @include mini-tablet {
+            width: 400px;
+            height: 180px;
+        }
+
+        @include phone {
+            width: 290px;
+            height: 180px;
+        }
+
+
+    }
+
+    input[type=submit] {
+        background-color: rgb(189, 155, 69);
+        height: 30px;
+        width: 150px;
+        border: none;
+        margin-top: 25px;
+
+        @include phone {
+            width: 130px;
+        }
+    }
+}

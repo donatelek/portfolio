@@ -1,0 +1,101 @@
+@mixin tablet {
+    @media (max-width: 812px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (max-width:520px) {
+        @content;
+    }
+}
+
+nav {
+
+
+    div.hamburgerBlur {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.815);
+        z-index: 22;
+
+    }
+
+    div.cross {
+        // background-color: red;
+        position: absolute;
+        top: 35px;
+        font-size: 30px;
+        right: 50px;
+        cursor: pointer;
+
+        @include phone {
+            top: 15px;
+            right: 30px;
+            font-size: 25px;
+        }
+    }
+
+    div.hamburger {
+        background-color: rgb(250, 242, 232);
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 800px;
+        height: 100vh;
+        z-index: 24;
+        animation: right-translate 0.6s ease-in-out;
+
+        @keyframes right-translate {
+            0% {
+
+                transform: translateX(800px)
+            }
+
+            100% {
+                transform: translateX(0);
+
+            }
+        }
+
+        @include tablet {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            bottom: 0;
+        }
+
+
+        ul {
+            // background-color: red;
+            z-index: 24;
+            text-align: left;
+
+            li {
+                cursor: pointer;
+                // font-weight: 400;
+                list-style-type: none;
+                font-size: 45px;
+                margin-left: 50px;
+                margin-top: 40px;
+                letter-spacing: 3px;
+            }
+
+            li.home {
+                margin-top: 120px;
+            }
+
+            li:hover {
+                color: black;
+            }
+        }
+
+        ul:hover {
+            color: rgb(122, 122, 122);
+        }
+    }
+}

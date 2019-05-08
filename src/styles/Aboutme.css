@@ -1,0 +1,112 @@
+section.Aboutme {
+  position: relative;
+  height: 800px;
+  text-align: center;
+}
+
+section.Aboutme ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 50px auto 0 auto;
+  max-width: 1800px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+@media (max-width: 1240px) {
+  section.Aboutme ul {
+    margin-left: 0;
+    margin-right: 0;
+    margin: 50px auto 0 auto;
+  }
+}
+
+@media (max-width: 1020px) {
+  section.Aboutme ul {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 670px) {
+  section.Aboutme ul {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 605px) {
+  section.Aboutme ul {
+    height: 150px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+section.Aboutme ul li {
+  height: 100px;
+  list-style-type: none;
+}
+
+@media (max-width: 1020px) {
+  section.Aboutme ul li {
+    height: 60px;
+  }
+}
+
+@media (max-width: 605px) {
+  section.Aboutme ul li {
+    height: 50px;
+    width: 20%;
+  }
+}
+
+section.Aboutme ul li img {
+  height: 100px;
+}
+
+@media (max-width: 1020px) {
+  section.Aboutme ul li img {
+    height: 60px;
+  }
+}
+
+@media (max-width: 605px) {
+  section.Aboutme ul li img {
+    height: 50px;
+  }
+}
+
+@media (max-width: 435px) {
+  section.Aboutme ul li img {
+    height: 38px;
+  }
+}
+
+section.Aboutme h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+  padding: 50px 0;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+section.Aboutme div {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  padding: 25px 0;
+}
+
+section.Aboutme h2 {
+  margin-top: 50px;
+}
+/*# sourceMappingURL=Aboutme.css.map */

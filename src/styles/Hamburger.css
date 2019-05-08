@@ -1,0 +1,96 @@
+nav div.hamburgerBlur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.815);
+  z-index: 22;
+}
+
+nav div.cross {
+  position: absolute;
+  top: 35px;
+  font-size: 30px;
+  right: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 520px) {
+  nav div.cross {
+    top: 15px;
+    right: 30px;
+    font-size: 25px;
+  }
+}
+
+nav div.hamburger {
+  background-color: #faf2e8;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 800px;
+  height: 100vh;
+  z-index: 24;
+  -webkit-animation: right-translate 0.6s ease-in-out;
+          animation: right-translate 0.6s ease-in-out;
+}
+
+@-webkit-keyframes right-translate {
+  0% {
+    -webkit-transform: translateX(800px);
+            transform: translateX(800px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes right-translate {
+  0% {
+    -webkit-transform: translateX(800px);
+            transform: translateX(800px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@media (max-width: 812px) {
+  nav div.hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    bottom: 0;
+  }
+}
+
+nav div.hamburger ul {
+  z-index: 24;
+  text-align: left;
+}
+
+nav div.hamburger ul li {
+  cursor: pointer;
+  list-style-type: none;
+  font-size: 45px;
+  margin-left: 50px;
+  margin-top: 40px;
+  letter-spacing: 3px;
+}
+
+nav div.hamburger ul li.home {
+  margin-top: 120px;
+}
+
+nav div.hamburger ul li:hover {
+  color: black;
+}
+
+nav div.hamburger ul:hover {
+  color: #7a7a7a;
+}
+/*# sourceMappingURL=Hamburger.css.map */

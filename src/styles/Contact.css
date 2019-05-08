@@ -1,0 +1,138 @@
+div.contact {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 85%;
+  color: #f0e4d6;
+}
+
+div.contact .loader {
+  margin-left: 50%;
+  top: 50%;
+  margin-top: -32px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 26px;
+  height: 26px;
+}
+
+div.contact .loader::after {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  border-color: #332910 transparent #332910 transparent;
+  -webkit-animation: lds-dual-ring 1.2s linear infinite;
+          animation: lds-dual-ring 1.2s linear infinite;
+}
+
+div.contact .sent {
+  color: #018a01;
+  width: 130px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: -27px;
+  font-size: 15px;
+}
+
+@-webkit-keyframes lds-dual-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+div.contact h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+  padding: 50px 0 25px 0;
+}
+
+@media (max-width: 440px) {
+  div.contact h1 {
+    font-size: 33px;
+  }
+}
+
+div.contact h2 {
+  padding: 15px 0;
+  font-size: 17px;
+}
+
+@media (max-width: 440px) {
+  div.contact h2 {
+    font-size: 15px;
+  }
+}
+
+div.contact input[type=text] {
+  background-color: transparent;
+  padding: 5px;
+  color: #f0e4d6;
+  border: 1px solid #bd9b45;
+  text-align: center;
+}
+
+@media (max-width: 440px) {
+  div.contact input[type=text] {
+    width: 150px;
+  }
+}
+
+div.contact textarea {
+  color: #f0e4d6;
+  width: 500px;
+  height: 200px;
+  border: 1px solid #bd9b45;
+  background-color: transparent;
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  div.contact textarea {
+    width: 400px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 440px) {
+  div.contact textarea {
+    width: 290px;
+    height: 180px;
+  }
+}
+
+div.contact input[type=submit] {
+  background-color: #bd9b45;
+  height: 30px;
+  width: 150px;
+  border: none;
+  margin-top: 25px;
+}
+
+@media (max-width: 440px) {
+  div.contact input[type=submit] {
+    width: 130px;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */

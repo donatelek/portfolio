@@ -1,0 +1,427 @@
+@mixin desktop {
+    @media (max-width: 1120px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 812px) {
+        @content;
+    }
+}
+
+@mixin mini-tablet {
+    @media (max-width:730px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (max-width:520px) {
+        @content
+    }
+}
+
+section.Projects {
+    // background-color: green;
+    position: relative;
+    height: 2000px;
+    text-align: center;
+
+
+    h1 {
+        font-size: 40px;
+        padding: 50px 0;
+        letter-spacing: 3px;
+
+
+
+        @include mini-tablet {
+            font-size: 30px;
+        }
+
+    }
+
+    ul {
+        @include desktop {
+            width: 800px;
+
+        }
+
+
+
+        @include tablet {
+            width: 500px;
+        }
+
+        @include phone {
+            width: 100%;
+        }
+
+        // background-color: red;
+        height: 1800px;
+        width: 1100px;
+        margin: 0 auto;
+        // margin-left: 400px;
+        // margin-right: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
+
+        li {
+            width: 100%;
+            height: 350px;
+            // background-color: yellow;
+            // box-shadow: 0 1px 1px 1px black;
+            list-style-type: none;
+
+        }
+
+        li.b {
+            width: 45%;
+            border: 1px solid grey;
+
+        }
+
+        li.d {
+            border: 1px solid grey;
+        }
+
+        li.c {
+            width: 45%;
+            border: 1px solid grey;
+        }
+
+        li.a {
+            @include desktop {
+                height: 450px;
+
+            }
+
+            @include tablet {
+                height: 280px;
+            }
+
+            @include phone {
+                height: 55vw;
+            }
+
+            // height: 550px;
+            // background: url('../img/sss.png');
+            // background-size: 100% 100%;
+            // // background-size: cover;
+            // // background-size: auto;
+            // background-position: center;
+            // background-repeat: no-repeat;
+            // position: relative;
+
+            // display: none;
+
+
+            transition: 0.7s ease border,
+            2.5s ease background-size;
+            // transition: 2.5s ease all;
+
+            div.aboutA {
+                // @mixin desktop {
+                //     width: ;
+                // }
+
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.61);
+                font-size: 35px;
+                letter-spacing: 3px;
+                color: rgb(0, 0, 0);
+                display: none;
+                // transition: 5s ease all;
+                // display: block;
+                cursor: pointer;
+
+                h1 {
+                    font-size: 23px;
+                    font-weight: bold;
+                    text-align: left;
+                    color: rgb(161, 161, 161);
+                    letter-spacing: 4px;
+                    margin-left: 30px;
+
+                    @include tablet {
+                        font-size: 20px;
+                        // margin-left: 60px;
+                        // margin-bottom: 10px;
+                        margin: 0;
+                        // background-color: red;
+                        position: absolute;
+                        top: 25px;
+                        left: 30px;
+                        width: 400px;
+                        height: 20px;
+                        padding: 0;
+                    }
+
+                    @include phone {
+                        font-size: 17px;
+                        left: 15px;
+
+                    }
+
+                }
+
+                h2 {
+                    font-size: 20px;
+                    text-align: left;
+                    color: rgb(189, 189, 189);
+                    margin-left: 30px;
+
+                    @include tablet {
+                        margin: 0;
+                        // background-color: red;
+                        position: absolute;
+                        top: 80px;
+                        left: 30px;
+                        font-size: 15px;
+                        width: 400px;
+                        height: 20px;
+                        padding: 0;
+                    }
+
+                    @include phone {
+                        // background-color: red;
+                        height: 50px;
+                        width: 280px;
+                        left: 15px;
+                        font-size: 12px;
+                        top: 60px;
+                    }
+                }
+
+                div.technologies {
+                    // left: 80px;
+                    top: 200px;
+                    position: absolute;
+                    // background-color: red;
+                    width: 50%;
+                    height: 180px;
+
+                    h1 {
+                        margin-top: -40px
+                    }
+
+                    i {
+                        margin-top: -20px;
+                        font-size: 70px;
+                    }
+
+                    // div.react {
+                    //     margin-right: 10px;
+                    //     background-size: cover;
+                    //     // background-color: pink;
+                    //     display: inline-block;
+                    //     width: 60px;
+                    //     height: 80px;
+                    //     position: relative;
+                    //     top: -40px;
+                    // }
+
+                    // div.react::before {
+                    //     content: '';
+                    //     position: absolute;
+                    //     // background-color: green;
+                    //     background: url('../img/js.png') center center;
+                    //     background-size: cover;
+                    //     width: 60px;
+                    //     height: 80px;
+                    //     top: 0;
+                    //     left: 0;
+                    // }
+
+                    // div.html {
+                    //     margin-right: 10px;
+                    //     background-size: cover;
+                    //     // background-color: pink;
+                    //     display: inline-block;
+                    //     width: 60px;
+                    //     height: 80px;
+                    //     position: relative;
+                    //     top: -40px;
+                    // }
+
+                    // div.html::before {
+                    //     content: '';
+                    //     position: absolute;
+                    //     // background-color: green;
+                    //     background: url('../img/html.png') center center;
+                    //     background-size: cover;
+                    //     width: 60px;
+                    //     height: 80px;
+                    //     top: 0;
+                    //     left: 0;
+                    // }
+
+                    // div.css {
+                    //     margin-right: 10px;
+                    //     background-size: cover;
+                    //     // background-color: pink;
+                    //     display: inline-block;
+                    //     width: 60px;
+                    //     height: 80px;
+                    //     position: relative;
+                    //     top: -40px;
+                    // }
+
+                    // div.css::before {
+                    //     content: '';
+                    //     position: absolute;
+                    //     // background-color: green;
+                    //     background: url('../img/css.png') center center;
+                    //     background-size: cover;
+                    //     width: 60px;
+                    //     height: 80px;
+                    //     top: 0;
+                    //     left: 0;
+                    // }
+
+                    // div.nodejs {
+
+                    //     background-size: cover;
+                    //     // background-color: pink;
+                    //     display: inline-block;
+                    //     width: 60px;
+                    //     height: 80px;
+                    //     // background-color: rgba(255, 255, 255, 0.37);
+                    //     margin-right: 10px;
+                    //     position: relative;
+                    //     top: -40px;
+                    // }
+
+                    // div.nodejs::before {
+                    //     content: '';
+                    //     position: absolute;
+                    //     background-color: rgba(255, 255, 255, 0.37);
+                    //     background: url('../img/nodd.jpg') center center;
+                    //     background-size: cover;
+                    //     width: 60px;
+                    //     height: 80px;
+                    //     top: 0;
+                    //     left: 0;
+                    // }
+
+                    // div.postgres {
+
+                    //     background-size: cover;
+                    //     // background-color: pink;
+                    //     display: inline-block;
+                    //     width: 90px;
+                    //     height: 80px;
+                    //     position: relative;
+                    //     top: -40px;
+                    //     margin-right: 10px;
+                    // }
+
+                    // div.postgres::before {
+                    //     content: '';
+                    //     position: absolute;
+                    //     // background-color: green;
+                    //     background: url('../img/kisspng-postgresql-database-logo-computer-icons-replicatio-software-developer-5adbf4c30a9de2.0455937315243644830435.png') center center;
+                    //     background-size: cover;
+                    //     width: 90px;
+                    //     height: 80px;
+                    //     top: 0;
+                    //     left: 0;
+                    // }
+
+                    // div.illustrator {
+
+                    //     background-size: cover;
+                    //     // background-color: pink;
+                    //     display: inline-block;
+                    //     width: 90px;
+                    //     height: 80px;
+                    //     position: relative;
+                    //     top: -40px;
+                    //     margin-right: 10px;
+                    // }
+
+                    // div.illustrator::before {
+                    //     content: '';
+                    //     position: absolute;
+                    //     // background-color: green;
+                    //     background: url('../img/illustrator.png') center center;
+                    //     background-size: cover;
+                    //     width: 90px;
+                    //     height: 80px;
+                    //     top: 0;
+                    //     left: 0;
+                    // }
+                }
+
+                div.updates {
+                    right: 80px;
+                    top: 200px;
+                    // background-color: red;
+                    display: inline-block;
+                    position: absolute;
+                }
+
+                button.live {
+                    position: absolute;
+                    bottom: 100px;
+                    left: 30%;
+                    width: 160px;
+                    height: 50px;
+                    border: 2px solid rgb(36, 36, 36);
+                    background-color: transparent;
+                    color: rgb(0, 0, 0);
+                    font-size: 22px;
+                    // font-weight: bold;
+                    background-color: rgba(0, 0, 0, 0.103);
+                    cursor: pointer;
+                    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.76);
+
+                }
+
+                button.github {
+                    position: absolute;
+                    bottom: 100px;
+                    right: 30%;
+                    width: 160px;
+                    height: 50px;
+                    border: 1px solid rgb(167, 167, 167);
+
+                    cursor: pointer;
+                    color: rgb(211, 211, 211);
+                    font-size: 20px;
+                    background-color: rgba(0, 0, 0, 0.103);
+                }
+
+                button.github:hover {
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+
+                button.live:hover {
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+            }
+
+        }
+
+        li.a:hover div.aboutA {
+            display: block;
+        }
+
+        li.a:hover {
+            border: 15px solid white;
+            background-size: 120% 120%;
+        }
+
+        li.d {
+            height: 700px;
+        }
+    }
+}

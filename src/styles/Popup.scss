@@ -1,0 +1,567 @@
+@mixin desktop {
+    @media (max-width: 1320px) {
+        @content;
+    }
+}
+
+@mixin S-desktop {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin MS-desktop {
+    @media (max-width: 1120px) {
+        @content;
+    }
+}
+
+@mixin VB-tablet {
+    @media (max-width:1050px) {
+        @content;
+    }
+}
+
+@mixin B-tablet {
+    @media (max-width: 930px) {
+        @content;
+    }
+}
+
+@mixin B-phone {
+    @media (max-width: 740px) {
+        @content;
+    }
+}
+
+@mixin M-phone {
+    @media (max-width: 625px) {
+        @content;
+    }
+}
+
+@mixin S-phone {
+    @media (max-width: 510px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (max-width: 460px) {
+        @content;
+    }
+}
+
+@mixin MS-phone {
+    @media (max-width: 410px) {
+        @content;
+    }
+}
+
+@mixin heightPhone {
+    @media (max-height: 710px) {
+        @content;
+    }
+}
+
+div.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1300px;
+    height: 700px;
+    background-color: rgb(226, 221, 216);
+    z-index: 22;
+    animation: swing-in-top-fwd 0.35s ease-out both;
+
+
+    @keyframes swing-in-top-fwd {
+        0% {
+
+            transform: translateZ(-800px) rotateY(90deg) translateX(-50%) translateY(-50%);
+            opacity: 0;
+        }
+
+        10% {
+
+            transform: translateZ(-160px) rotateY(87deg) translateX(-50%) translateY(-50%);
+            opacity: 1;
+        }
+
+        100% {
+
+            transform: translateZ(0) rotateY(0) translateX(-50%) translateY(-50%);
+        }
+    }
+
+    @include desktop {
+        width: 95%;
+    }
+
+    @include heightPhone {
+        width: 98%;
+        height: 99%;
+
+    }
+
+    h1 {
+        padding: 50px 0 25px 0;
+
+        @include heightPhone {
+            font-size: 20px;
+            // background-color: pink;
+            padding-top: 20px;
+        }
+
+        // background-color: red;
+    }
+
+    h2 {
+        margin-bottom: 25px;
+        // background-color: green;
+        // color: rgb(110, 110, 110);
+        padding-bottom: 25px;
+
+        @include heightPhone {
+            font-size: 15px;
+            padding-bottom: 15px;
+            // margin-bottom: 15px;
+            // background-color: pink;
+        }
+    }
+
+    .technologies {
+        // background-color: red;
+        position: absolute;
+        right: 0;
+        top: 55%;
+        transform: translateY(-50%);
+        width: 600px;
+        height: 400px;
+        // display: inline-block;
+        color: rgb(51, 51, 51);
+
+        @include B-tablet {
+            // background-color: pink;
+            width: 600px;
+            height: 230px;
+            position: absolute;
+            top: 480px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        @include heightPhone {
+            // background-color: pink;
+            top: 360px;
+        }
+
+        h1.title {
+            padding: 0;
+            // background-color: red;
+            font-size: 24px;
+            margin-top: 25px;
+            width: 600px;
+            margin-bottom: 25px;
+
+            // height: 10px;
+            // display: inline-block;
+            @include MS-desktop {
+                // background-color: red;
+                display: inline-block;
+                width: 500px;
+                right: 0;
+                margin-left: 135px;
+                // position: absolute;
+
+            }
+
+            @include B-tablet {
+                // background-color: red;
+                margin: 0;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+
+            @include phone {
+                font-size: 15px;
+            }
+        }
+
+        ul.front {
+            display: flex;
+            // background-color: rgb(250, 213, 191);
+            position: absolute;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            @include MS-desktop {
+                // background-color: red;
+                width: 130px;
+                right: 70px;
+            }
+
+            @include B-tablet {
+                // background-color: red;
+                margin: 0;
+                margin-left: 100px;
+            }
+
+            @include phone {
+                // background-color: red;
+                width: 95px;
+                margin-left: 160px;
+            }
+
+            h1 {
+                // background-color: blue;
+                text-align: center;
+                padding: 0;
+                left: 50%;
+                font-size: 20px;
+                border-bottom: 1px solid grey;
+                // height: 100px;
+                width: 100%;
+
+                @include phone {
+                    font-size: 15px;
+                    padding: 5px 0;
+                    font-size: 14px;
+
+                }
+            }
+
+            li {
+                height: 20px;
+                margin-top: 5px;
+                width: 100%;
+                font-size: 18px;
+
+                // background-color: grey;
+                @include phone {
+                    font-size: 14px;
+                    padding: 5px 0;
+                }
+            }
+        }
+
+        ul.back {
+            display: flex;
+            // background-color: green;
+            position: absolute;
+            left: 200px;
+            width: 200px;
+            font-size: 20px;
+            height: 200px;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            @include MS-desktop {
+                // background-color: red;
+                width: 130px;
+                right: 0px;
+            }
+
+            @include B-tablet {
+                // background-color: red;
+                margin: 0;
+                margin-left: 35px;
+
+            }
+
+            @include phone {
+                // background-color: red;
+                width: 95px;
+                margin-left: 55px;
+            }
+
+            h1 {
+                // background-color: blue;
+                text-align: center;
+                padding: 0;
+                left: 50%;
+                border-bottom: 1px solid grey;
+                // height: 100px;
+                width: 100%;
+                font-size: 20px;
+
+                @include phone {
+                    font-size: 14px;
+                    padding: 5px 0;
+                    // background-color: red;
+                }
+            }
+
+            li {
+                height: 20px;
+                margin-top: 5px;
+                width: 100%;
+                font-size: 18px;
+
+                // background-color: grey;
+                @include phone {
+                    font-size: 14px;
+                    padding: 5px 0;
+                }
+            }
+        }
+
+        ul.tools {
+            display: flex;
+            // background-color: rgb(250, 213, 191);
+            position: absolute;
+            left: 400px;
+
+            width: 200px;
+            height: 200px;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            @include MS-desktop {
+                // background-color: red;
+                width: 130px;
+                right: -70px;
+            }
+
+            @include B-tablet {
+                // background-color: red;
+                margin: 0;
+                margin-left: -30px;
+            }
+
+            @include phone {
+                // background-color: red;
+                width: 95px;
+                font-size: 14px;
+                margin-left: -50px;
+                // padding: -5px 0;
+            }
+
+            h1 {
+                // background-color: blue;
+                text-align: center;
+                padding: 0;
+                left: 50%;
+                border-bottom: 1px solid grey;
+                // height: 100px;
+                width: 100%;
+                font-size: 20px;
+
+                @include phone {
+                    font-size: 14px;
+                    padding: 5px 0;
+                }
+            }
+
+            li {
+                height: 20px;
+                margin-top: 5px;
+                width: 100%;
+                font-size: 18px;
+
+                // background-color: grey;
+                @include phone {
+                    font-size: 14px;
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+
+    button.github {
+        position: absolute;
+        bottom: 100px;
+        right: 30%;
+        width: 210px;
+        height: 60px;
+        border: 1px solid rgb(160, 160, 160);
+        background-color: transparent;
+        color: black;
+        font-size: 14px;
+
+        letter-spacing: 2px;
+
+        @include S-desktop {
+            // background-color: red;
+            right: 270px;
+        }
+
+        @include VB-tablet {
+            right: 200px;
+        }
+
+        @include B-tablet {
+            bottom: 20px;
+            right: 18%;
+
+        }
+
+        @include B-phone {
+            width: 180px;
+            height: 50px;
+        }
+
+        @include M-phone {
+            right: 70px;
+            width: 160px;
+            font-size: 12px;
+        }
+
+        @include S-phone {
+            right: 20px;
+        }
+
+        @include MS-phone {
+            width: 120px;
+            bottom: 30px;
+            height: 40px;
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+
+        i {
+            transition: 0.5s ease all;
+
+            @include MS-phone {
+                display: none;
+            }
+        }
+    }
+
+    button.github:hover i {
+        transform: translateX(15px);
+    }
+
+    button.live {
+        position: absolute;
+        bottom: 100px;
+        left: 30%;
+        width: 210px;
+        height: 60px;
+        border: 1px solid rgb(160, 160, 160);
+        background-color: transparent;
+        color: black;
+        font-size: 14px;
+
+        letter-spacing: 2px;
+
+        @include S-desktop {
+            // background-color: red;
+            left: 270px;
+        }
+
+        @include VB-tablet {
+            left: 200px;
+        }
+
+        @include B-tablet {
+            bottom: 20px;
+            left: 18%;
+
+        }
+
+        @include B-phone {
+            width: 180px;
+            height: 50px;
+        }
+
+        @include M-phone {
+            left: 70px;
+            width: 160px;
+            font-size: 12px;
+        }
+
+        @include S-phone {
+            left: 20px;
+        }
+
+        @include MS-phone {
+            width: 120px;
+            bottom: 30px;
+            height: 40px;
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+
+        i {
+            transition: 0.5s ease all;
+
+            @include MS-phone {
+                display: none;
+            }
+        }
+    }
+
+    button.live:hover i {
+        transform: translateX(15px);
+    }
+
+    .preview {
+        background: url('../img/preview.png') center center;
+        background-size: cover;
+        // position: absolute;
+        margin-top: 150px;
+        width: 400px;
+        height: 225px;
+        // top: 50%;
+        // left: 0;
+        margin-left: 300px;
+        transform: translate(-50%, -50%);
+
+        @include S-desktop {
+            margin-left: 225px;
+        }
+
+        @include B-tablet {
+            // background-color: red;
+            width: 300px;
+            height: 170px;
+            margin-top: 80px;
+            margin-left: 50%;
+
+        }
+
+        @include phone {
+            width: 250px;
+            height: 140px;
+        }
+
+
+        @include heightPhone {
+            height: 120px;
+            width: 210px;
+        }
+    }
+
+    div.close {
+        // background-color: red;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        width: 30px;
+
+        font-size: 25px;
+        height: 30px;
+
+        i {
+            color: rgb(141, 27, 27);
+            cursor: pointer;
+            font-size: 30px;
+        }
+    }
+}
+
+div.hiderest {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: 21;
+    background-color: rgba(0, 0, 0, 0.363);
+}

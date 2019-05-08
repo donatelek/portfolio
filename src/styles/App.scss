@@ -1,0 +1,54 @@
+@import "Variables.scss";
+$mycolor: green;
+$colors: (primary:blue,
+    seconcary: yellow, primary-light: lighten(#005DFF, 40%),
+    primary-dark: darken(#005DFF, 40%), );
+$desktop: 840px;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+
+
+// @function color($color-name) {
+//     @return map-get($colors, $color-name)
+// }
+
+// @mixin desktop {
+//     @media (min-width: #{$desktop}) {
+//         @content;
+//     }
+// }
+
+// shift alt strzalka w dol
+
+// div {
+//     background-color: color(primary);
+
+
+//     @include desktop {
+//         background-color: $mycolor;
+//     }
+
+//     span {
+//         background-color: map-get($colors, seconcary)
+//     }
+// }
+
+
+div.container {
+    // background-color: pink;
+    position: relative;
+    height: 3000px;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}

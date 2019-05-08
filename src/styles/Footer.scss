@@ -1,0 +1,40 @@
+@mixin mini-tablet {
+    @media (max-width:730px) {
+        @content;
+    }
+}
+
+footer {
+    background-color: rgb(31, 29, 30);
+    position: relative;
+    height: 600px;
+
+    .icons {
+        position: absolute;
+        right: 50px;
+        display: flex;
+        bottom: 20px;
+        font-size: 50px;
+        color: white;
+
+        @include mini-tablet {
+            // background-color: red;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            justify-content: center;
+        }
+
+        i {
+            cursor: pointer;
+            margin-left: 30px;
+            color: rgb(240, 228, 214);
+
+
+        }
+
+        .fa-github-square {
+            margin-left: 0;
+        }
+    }
+}
