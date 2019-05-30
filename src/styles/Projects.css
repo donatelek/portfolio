@@ -13,6 +13,13 @@ section.Projects h1 {
 @media (max-width: 730px) {
   section.Projects h1 {
     font-size: 30px;
+    margin: 25px 0;
+  }
+}
+
+@media (max-width: 520px) {
+  section.Projects h1 {
+    letter-spacing: 0.5px;
   }
 }
 
@@ -111,6 +118,13 @@ section.Projects ul li.a div.aboutA {
   cursor: pointer;
 }
 
+@media (max-width: 730px) {
+  section.Projects ul li.a div.aboutA {
+    display: block;
+    background: rgba(255, 255, 255, 0.301);
+  }
+}
+
 section.Projects ul li.a div.aboutA h1 {
   font-size: 23px;
   font-weight: bold;
@@ -130,6 +144,12 @@ section.Projects ul li.a div.aboutA h1 {
     width: 400px;
     height: 20px;
     padding: 0;
+  }
+}
+
+@media (max-width: 730px) {
+  section.Projects ul li.a div.aboutA h1 {
+    color: black;
   }
 }
 
@@ -157,6 +177,12 @@ section.Projects ul li.a div.aboutA h2 {
     width: 400px;
     height: 20px;
     padding: 0;
+  }
+}
+
+@media (max-width: 730px) {
+  section.Projects ul li.a div.aboutA h2 {
+    color: black;
   }
 }
 

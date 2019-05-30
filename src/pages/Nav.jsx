@@ -15,7 +15,7 @@ class Nav extends Component {
      
     render() { 
         return ( 
-            <nav className={this.props.page}>
+            <nav className={this.props.isTop}>
                 <div className="logo" onClick={()=>this.handleScrollHome(document.body,0,1250)} >SZNAJDER</div>
                 <div className="hamburgerIcon" onClick={()=>this.props.handleChangePage('nav')}>
                 <div className="menu">Menu</div>

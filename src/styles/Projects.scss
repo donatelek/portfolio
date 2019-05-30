@@ -38,8 +38,12 @@ section.Projects {
 
         @include mini-tablet {
             font-size: 30px;
+            margin: 25px 0;
         }
 
+        @include phone {
+            letter-spacing: 0.5px;
+        }
     }
 
     ul {
@@ -125,6 +129,8 @@ section.Projects {
             // transition: 2.5s ease all;
 
             div.aboutA {
+
+
                 // @mixin desktop {
                 //     width: ;
                 // }
@@ -142,6 +148,11 @@ section.Projects {
                 // transition: 5s ease all;
                 // display: block;
                 cursor: pointer;
+
+                @include mini-tablet {
+                    display: block;
+                    background: rgba(255, 255, 255, 0.301);
+                }
 
                 h1 {
                     font-size: 23px;
@@ -163,6 +174,11 @@ section.Projects {
                         width: 400px;
                         height: 20px;
                         padding: 0;
+                    }
+
+                    @include mini-tablet {
+                        color: black;
+
                     }
 
                     @include phone {
@@ -189,6 +205,11 @@ section.Projects {
                         width: 400px;
                         height: 20px;
                         padding: 0;
+                    }
+
+                    @include mini-tablet {
+                        color: black;
+
                     }
 
                     @include phone {

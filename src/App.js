@@ -8,20 +8,66 @@ import './styles/App.css';
 
 class App extends Component {
   state = { 
-    
+    isTop:'onTop',
     page:'main'
    }
+   UNSAFE_componentWillMount(){
+    window.scrollTo(0, 1500)
+   }
    componentDidMount(){
-    window.addEventListener('scroll',this.handd)
-
+   
+    // document.addEventListener('change',()=>{
+    //   if(this.state.page==='project'){
+    //     this.setState({
+    //       isTop:'hidden'
+    //     })
+    //   }
+    // })
+    document.addEventListener('load', () => {
+      
+      const isTop = window.scrollY < 580;
+      console.log(isTop)
+      
+      if (isTop !== this.state.isTop) {
+        if(isTop===true){
+          this.setState({
+            isTop:'onTop'
+           })
+        }else{
+          this.setState({
+            isTop:'onBottom'
+           })
+        }
+        
+          
+      }
+    });
+    document.addEventListener('scroll', () => {
+      
+      const isTop = window.scrollY < 160;
+      console.log(isTop)
+      if(this.state.page!=='project'){
+        if (isTop !== this.state.isTop) {
+          if(isTop===true){
+            this.setState({
+              isTop:'onTop'
+             })
+          }else{
+            this.setState({
+              isTop:'onBottom'
+             })
+          }
+          
+            
+        }
+      }
+      
+    });
    
   }
+  
   handleShowHamburger=()=>{
-    if(!this.state.showHamburger){
-      // noScroll.on()
-    }else{
-      // noScroll.off()
-    }
+  
     this.setState({
         showHamburger:!this.state.showHamburger
     })
@@ -29,6 +75,31 @@ class App extends Component {
 
 
 handleChangePage=page=>{
+  if(page==='project'){
+    
+    this.setState({
+      isTop:'hidden'
+    })
+    
+  }else{
+    document.body.style.overflow = "visible"
+    const isTop = window.scrollY < 160;
+    if(isTop===true){
+      this.setState({
+        isTop:'onTop'
+      })
+    }else{
+      this.setState({
+        isTop:'onBottom'
+      })
+    }
+    
+  }
+  if(page==='project'||page==='nav'){
+    document.body.style.overflow = "hidden"
+    
+   
+  }
   this.setState({
     page
   })
@@ -45,23 +116,24 @@ handleChangePage=page=>{
 //poprawic wysokosc strony
 //dodac animacje na przycisku z contactu
 
- handd=(e)=>{
+//  handd=(e)=>{
   
-   // 115px
-   if(window.scrollY>130){
-     this.setState({
-       page:'topMain'
-     })
-   }else if(window.scrollY<131){
-     this.setState({
-       page:'main'
-     })
-   }
- }
+//    // 115px
+//    if(window.scrollY>130){
+//      this.setState({
+//        page:'topMain'
+//      })
+//    }else if(window.scrollY<131){
+//      this.setState({
+//        page:'main'
+//      })
+//    }
+//  }
   render() { 
+    // window.scrollTo(0, 1500)
     return ( 
       <div className='container'>
-      <Nav handleChangePage={this.handleChangePage} page={this.state.page} />
+      <Nav handleChangePage={this.handleChangePage} page={this.state.page} isTop={this.state.isTop}/>
       <Main/>
       <Projects handleChangePage={this.handleChangePage} page={this.state.page} />
       

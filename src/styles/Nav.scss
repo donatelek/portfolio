@@ -14,7 +14,7 @@ nav.main {
 
 
 
-    background-color: rgba(255, 255, 255, 0.527);
+    // background-color: rgba(255, 255, 255, 0.527);
 }
 
 nav.nodisplay {
@@ -23,6 +23,7 @@ nav.nodisplay {
 
 nav {
     background-color: rgb(240, 228, 214);
+    // background-color: transparent;
     height: 100px;
     position: sticky;
     top: 0;
@@ -105,4 +106,16 @@ nav {
             }
         }
     }
+}
+
+nav.onTop {
+    background-color: rgb(240, 228, 214);
+}
+
+nav.onBottom {
+    background-color: rgba(255, 255, 255, 0.705);
+}
+
+nav.hidden {
+    display: none;
 }

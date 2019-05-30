@@ -10,7 +10,7 @@ class Projects extends Component {
         return ( 
             <section className="Projects">
            {this.props.page==='project'&&<Popup handleChangePage={this.props.handleChangePage} page={this.props.page} />}
-            <h1>Checkout my projects:</h1>
+            <h1>Checkout my projects</h1>
             <ul className="projects">
             <li className='a' onClick={()=>this.props.handleChangePage('project')} >
                 <div className="aboutA">
