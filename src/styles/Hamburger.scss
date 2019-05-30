@@ -47,6 +47,7 @@ nav {
         width: 800px;
         height: 100vh;
         z-index: 24;
+        overflow: visible;
         animation: right-translate 0.6s ease-in-out;
 
         @keyframes right-translate {

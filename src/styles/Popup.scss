@@ -74,7 +74,7 @@ div.popup {
     background-color: rgb(226, 221, 216);
     z-index: 22;
     animation: swing-in-top-fwd 0.35s ease-out both;
-
+    overflow-x: hidden;
 
     @keyframes swing-in-top-fwd {
         0% {
@@ -100,8 +100,9 @@ div.popup {
     }
 
     @include heightPhone {
-        width: 98%;
+        width: 90vw;
         height: 99%;
+        height: 600px;
 
     }
 

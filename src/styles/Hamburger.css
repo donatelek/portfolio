@@ -32,6 +32,7 @@ nav div.hamburger {
   width: 800px;
   height: 100vh;
   z-index: 24;
+  overflow: visible;
   -webkit-animation: right-translate 0.6s ease-in-out;
           animation: right-translate 0.6s ease-in-out;
 }

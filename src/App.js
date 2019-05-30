@@ -132,14 +132,18 @@ handleChangePage=page=>{
   render() { 
     // window.scrollTo(0, 1500)
     return ( 
-      <div className='container'>
+      // <div className='container' style={{overflow:'hidden'}}>
+      <>
       <Nav handleChangePage={this.handleChangePage} page={this.state.page} isTop={this.state.isTop}/>
+      <div style={{overflowX:'hidden'}}>
       <Main/>
       <Projects handleChangePage={this.handleChangePage} page={this.state.page} />
       
       <Aboutme/>
       <Footer/>
       </div>
+      </>
+    
      );
   }
 }

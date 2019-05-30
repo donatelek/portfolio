@@ -5,7 +5,7 @@ class Footer extends Component {
     state = {  }
     render() { 
         return ( 
-            <footer>
+            <footer >
                 <Contact/>
                 <div className='icons'>
                 <i class="fab fa-github-square"></i>

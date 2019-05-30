@@ -11,7 +11,7 @@ import sass from '../img/sass.png'
 import vsc from '../img/vsc.png'
 const Aboutme = () => {
     return ( 
-        <section className="Aboutme">
+        <section className="Aboutme" >
           <h1>About me:</h1>
            <div>Hi my name is Jakub Sznajder. Im junior developer looking for job. mmmmm kkkkad adsasdads asdads asdas das as das dasdasdads asd as as dasadsdsas asd asd as as ask mkmkm kmkmkmkmkmk kmmkmk mkmk mk mkmkmkmkmk mkkmk </div>
          <h2>My Abilities</h2>

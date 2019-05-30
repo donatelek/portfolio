@@ -10,6 +10,7 @@ div.popup {
   z-index: 22;
   -webkit-animation: swing-in-top-fwd 0.35s ease-out both;
           animation: swing-in-top-fwd 0.35s ease-out both;
+  overflow-x: hidden;
 }
 
 @-webkit-keyframes swing-in-top-fwd {
@@ -54,8 +55,9 @@ div.popup {
 
 @media (max-height: 710px) {
   div.popup {
-    width: 98%;
+    width: 90vw;
     height: 99%;
+    height: 600px;
   }
 }
 

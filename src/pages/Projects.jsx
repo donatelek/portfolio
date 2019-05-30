@@ -8,7 +8,7 @@ class Projects extends Component {
    
     render() { 
         return ( 
-            <section className="Projects">
+            <section className="Projects" >
            {this.props.page==='project'&&<Popup handleChangePage={this.props.handleChangePage} page={this.props.page} />}
             <h1>Checkout my projects</h1>
             <ul className="projects">

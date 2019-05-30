@@ -6,7 +6,7 @@ class Popup extends Component {
         return ( 
             <div>
                     <div className="hiderest" onClick={()=>this.props.handleChangePage('main')} ></div>
-                    <div className="popup">
+                    <div className="popup" style={{overflowX:'hidden'}}>
                     <div className="close"><i class="far fa-times-circle" onClick={()=>this.props.handleChangePage('main')} ></i></div>
                         <h1>EDM Challenge</h1>
                         <h2>Quiz site for Electronic dance music fans</h2>
