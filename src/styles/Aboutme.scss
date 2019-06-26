@@ -29,29 +29,22 @@
 }
 
 section.Aboutme {
-    // background-color: pink;
     position: relative;
     height: 800px;
     text-align: center;
 
-
-
     ul {
         display: flex;
-        // background-color: red;
         justify-content: space-between;
-        // width: 1100px;
         margin: 50px auto 0 auto;
         max-width: 1800px;
         margin-left: 10%;
-
         margin-right: 10%;
 
         @include desktopIcons {
             margin-left: 0;
             margin-right: 0;
             margin: 50px auto 0 auto;
-
         }
 
         @include tabletIcons {
@@ -68,10 +61,6 @@ section.Aboutme {
             height: 150px;
             flex-wrap: wrap;
             justify-content: center;
-        }
-
-        @include S-mobileIcons {
-            // justify-content: space-around;
         }
 
         li {
@@ -96,7 +85,6 @@ section.Aboutme {
 
                 @include M-mobileIcons {
                     height: 50px;
-
                 }
 
                 @include S-mobileIcons {
@@ -123,7 +111,6 @@ section.Aboutme {
     }
 
     h2 {
-        // background-color: red;
         margin-top: 50px;
     }
 }

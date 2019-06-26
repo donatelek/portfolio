@@ -12,25 +12,44 @@ footer .icons {
   display: flex;
   bottom: 20px;
   font-size: 50px;
-  color: white;
+  color: #f0e4d6;
 }
 
 @media (max-width: 730px) {
   footer .icons {
-    left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    width: 100%;
+    width: 300px;
+    left: 50%;
+    bottom: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
 
-footer .icons i {
-  cursor: pointer;
+@media (max-width: 440px) {
+  footer .icons {
+    font-size: 40px;
+    bottom: 25px;
+  }
+}
+
+footer .icons a {
   margin-left: 30px;
+  cursor: pointer;
   color: #f0e4d6;
+}
+
+@media (max-width: 730px) {
+  footer .icons a {
+    margin: 0;
+    margin: 0 25px;
+  }
+}
+
+footer .icons a:hover {
+  color: #a09566;
 }
 
 footer .icons .fa-github-square {

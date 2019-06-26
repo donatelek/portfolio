@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import Hamburger from './Hamburger.jsx';
 import '../styles/Nav.css'
 class Nav extends Component {
-    state = { 
-     }
+    state = {}
 
     handleScrollHome=()=>{
             window.scrollTo({

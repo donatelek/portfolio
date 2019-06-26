@@ -10,29 +10,18 @@
     }
 }
 
-nav.main {
-
-
-
-    // background-color: rgba(255, 255, 255, 0.527);
-}
-
 nav.nodisplay {
     display: none;
 }
 
 nav {
     background-color: rgb(240, 228, 214);
-    // background-color: transparent;
     height: 100px;
     position: sticky;
     top: 0;
     left: 0;
     text-align: center;
-
     z-index: 23;
-
-
 
     .logo {
         position: absolute;
@@ -60,11 +49,9 @@ nav {
         position: absolute;
         right: 50px;
         top: 50%;
-
         transform: translateY(-50%);
         font-size: 13px;
         width: 100px;
-        // background-color: red;
         display: flex;
         justify-content: flex-end;
         cursor: pointer;
@@ -80,14 +67,12 @@ nav {
             font-size: 25px;
         }
 
-
         i {
             font-size: 30px;
             color: rgb(34, 34, 34);
             right: 0;
 
             @include phone {
-
                 font-size: 25px;
             }
         }
@@ -101,7 +86,6 @@ nav {
             color: gray;
 
             @include phone {
-
                 display: none;
             }
         }

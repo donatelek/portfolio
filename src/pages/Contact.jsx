@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import '../styles/Contact.css';
+
 export default class Contact extends Component {
   state = {
     feedback: '',
@@ -8,34 +9,65 @@ export default class Contact extends Component {
     name:'',
     showSpinner:false,
     buttonDisabled:false,
-    buttonMessage:'Submit'
+    buttonMessage:'Submit',
+    errors:{
+      name:false,
+      feedback:false
+    }
   };
 
-  handleCancel = this.handleCancel.bind(this);
-  handleChange = this.handleChange.bind(this);
-  handleSubmit = this.handleSubmit.bind(this);
+ errorMessages ={
+  name:'Write your name',
+  feedback:'Write your message'
+ }
 
-  static sender = 'sender@example.com';
+static sender = 'sender@example.com';
+
 handleNameChange=(e)=>{
-  
   this.setState({
     name:e.target.value
   })
 }
-  handleCancel() {
+  handleCancel=()=> {
     this.setState({
       feedback: ''
     });
   }
 
-  handleChange(event) {
+  handleChange=(event)=> {
     this.setState({
       feedback: event.target.value
     });
   }
 
-  handleSubmit(event) {
+  handleSubmit=(event)=> {
     event.preventDefault();
+    if(!this.state.feedback.length||!this.state.name.length){
+     let name=false;
+     let feedback=false;
+      if(this.state.name.length<1){
+          name=true
+      }
+      if(this.state.feedback.length<1){
+        feedback=true
+      }
+      this.setState({
+        errors:{
+          name,
+          feedback
+        }
+      })
+      setTimeout(()=>{
+        this.setState({
+          errors:{
+            name:false,
+            feedback:false
+          }
+        })
+      },2000)
+      return
+    }
+    
     const receiv = 'donatelek92@gmail.com'
     const temp = 'contact_template'
     this.sendFeedback(
@@ -48,7 +80,8 @@ handleNameChange=(e)=>{
       formSubmitted: true
     });
   }
-  sendFeedback(templateId, senderEmail, name, feedback) {
+
+  sendFeedback=(templateId, senderEmail, name, feedback)=>{
     const receiv = 'donatelek92@gmail.com'
     const temp = 'contact_template'
     console.log(feedback)
@@ -68,6 +101,9 @@ handleNameChange=(e)=>{
   }
 
   handleSendButton=()=>{
+    if(!this.state.feedback.length||!this.state.name.length){
+      return 
+    }
 this.setState({
   showSpinner:true,
   buttonMessage:''
@@ -85,10 +121,11 @@ setTimeout(()=>{
   render() {
     return (
       <div className="contact">
-      <h1>Get in touch</h1>
+      <h1>Hire me</h1>
       <form className="feedback-form" onSubmit={this.handleSubmit}>
       <h2>Your name</h2>
       <input type="text" onChange={this.handleNameChange} value={this.state.name} placeholder="Name"/>
+      {this.state.errors.name&&<div className="error">{this.errorMessages.name}</div>}
         <h2>Your Message</h2>
         <textarea
           className="text-input"
@@ -96,9 +133,9 @@ setTimeout(()=>{
           name="feedback-entry"
           onChange={this.handleChange}
           placeholder="Enter your message here"
-          required
           value={this.state.feedback}
         />
+        {this.state.errors.feedback&&<div className="error">{this.errorMessages.feedback}</div>}
         <div className="btn-group">
           <input type="submit" value={this.state.buttonMessage} className="btn btn--submit" onClick={this.handleSendButton} disabled={this.state.buttonDisabled} />
           {this.state.showSpinner&&<div className="loader"></div>}

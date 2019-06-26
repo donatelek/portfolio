@@ -4,15 +4,25 @@
     }
 }
 
+@mixin b-phone {
+    @media (max-width: 630px) {
+        @content;
+    }
+}
+
 @mixin phone {
     @media (max-width:520px) {
         @content;
     }
 }
 
+@mixin s-phone {
+    @media (max-width:430px) {
+        @content;
+    }
+}
+
 nav {
-
-
     div.hamburgerBlur {
         position: fixed;
         top: 0;
@@ -21,11 +31,9 @@ nav {
         right: 0;
         background-color: rgba(255, 255, 255, 0.815);
         z-index: 22;
-
     }
 
     div.cross {
-        // background-color: red;
         position: absolute;
         top: 35px;
         font-size: 30px;
@@ -50,15 +58,22 @@ nav {
         overflow: visible;
         animation: right-translate 0.6s ease-in-out;
 
+        div.copiedEmail {
+            // background-color: red;
+            font-size: 13px;
+            position: absolute;
+            right: 170px;
+            transform: translateX(50%);
+            bottom: 80px;
+        }
+
         @keyframes right-translate {
             0% {
-
                 transform: translateX(800px)
             }
 
             100% {
                 transform: translateX(0);
-
             }
         }
 
@@ -70,20 +85,105 @@ nav {
             bottom: 0;
         }
 
+        @keyframes dissapear {
+            0% {
+                opacity: 0;
 
-        ul {
-            // background-color: red;
+            }
+
+            100% {
+                opacity: 1;
+
+            }
+        }
+
+        ul.icons {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            list-style-type: none;
+            font-size: 35px;
+            animation: dissapear 1.5s ease-in-out;
+            display: block;
+
+            @include b-phone {
+                width: 80%;
+                margin-left: 50%;
+                transform: translateX(-50%);
+
+            }
+
+            @include s-phone {
+                font-size: 25px;
+            }
+
+
+            li {
+                cursor: pointer;
+                position: absolute;
+                bottom: 0;
+
+                i {
+                    color: black;
+                    transition: transform .5s ease;
+                    display: inline-block;
+                }
+
+                i:hover {
+                    transform: rotate(360deg)
+                }
+            }
+
+            li:nth-of-type(1) {
+                left: 150px;
+
+                @include b-phone {
+                    left: 0;
+                }
+            }
+
+            li:nth-of-type(2) {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            li:nth-of-type(3) {
+                right: 150px;
+
+                @include b-phone {
+                    right: 0;
+                }
+            }
+        }
+
+        ul.nav {
             z-index: 24;
             text-align: left;
 
             li {
                 cursor: pointer;
-                // font-weight: 400;
                 list-style-type: none;
                 font-size: 45px;
                 margin-left: 50px;
                 margin-top: 40px;
                 letter-spacing: 3px;
+                animation: letterspacing 1s ease-in-out;
+
+                @include s-phone {
+                    font-size: 28px;
+                }
+            }
+
+            @keyframes letterspacing {
+                0% {
+                    letter-spacing: 20px;
+                    transform: translateX(400px);
+                }
+
+                100% {
+                    letter-spacing: 3px;
+                    transform: translateX(0px);
+                }
             }
 
             li.home {
@@ -95,7 +195,7 @@ nav {
             }
         }
 
-        ul:hover {
+        ul.nav:hover {
             color: rgb(122, 122, 122);
         }
     }

@@ -8,9 +8,9 @@ class Footer extends Component {
             <footer >
                 <Contact/>
                 <div className='icons'>
-                <i class="fab fa-github-square"></i>
-                <i class="fab fa-linkedin"></i>
-                <i class="fas fa-envelope-square"></i>
+                <a href="https://github.com/donatelek"><i class="fab fa-github-square"></i></a>
+                <a href="https://github.com/donatelek"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/donatelek"><i class="fas fa-envelope-square"></i></a>
                 </div>
             </footer>
          );

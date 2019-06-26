@@ -9,12 +9,17 @@ import nodejs from '../img/nodejs.png'
 import illustrator from '../img/illustrator.png'
 import sass from '../img/sass.png'
 import vsc from '../img/vsc.png'
+import {Roll,Fade} from 'react-reveal'
+
 const Aboutme = () => {
     return ( 
         <section className="Aboutme" >
-          <h1>About me:</h1>
+          <Roll right cascade>
+          <h1>Few words about me and myself</h1>
            <div>Hi my name is Jakub Sznajder. Im junior developer looking for job. mmmmm kkkkad adsasdads asdads asdas das as das dasdasdads asd as as dasadsdsas asd asd as as ask mkmkm kmkmkmkmkmk kmmkmk mkmk mk mkmkmkmkmk mkkmk </div>
+           </Roll>
          <h2>My Abilities</h2>
+         <Fade right>
           <ul>
             <li><img src={html} alt=""/></li>
             <li><img src={css} alt=""/></li>
@@ -26,6 +31,7 @@ const Aboutme = () => {
             <li><img src={sass} alt=""/></li>
             <li><img src={vsc} alt=""/></li>
           </ul>
+          </Fade>
         </section>
      );
 }

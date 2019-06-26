@@ -1,5 +1,6 @@
 import React  from 'react';
 import '../styles/Main.css'
+
 const Main = () => {
    const handleScrollContact=()=>{
     window.scrollTo({
@@ -8,6 +9,7 @@ const Main = () => {
         behavior: 'smooth'
       });
     }
+
     return ( 
         <main className='main'>
             <h1>Hello, I'm Jakob</h1>

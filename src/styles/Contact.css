@@ -30,6 +30,11 @@ div.contact .loader::after {
           animation: lds-dual-ring 1.2s linear infinite;
 }
 
+div.contact div.error {
+  color: #a09566;
+  font-size: 13px;
+}
+
 div.contact .sent {
   color: #018a01;
   width: 130px;
@@ -64,7 +69,7 @@ div.contact .sent {
 
 div.contact h1 {
   font-size: 40px;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   padding: 50px 0 25px 0;
 }
 
