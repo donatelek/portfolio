@@ -17,7 +17,7 @@
 
 ## Project Demo
 
-Here is a working live demo :  https://donatelek.github.io/Portfolio/
+Here is a working live demo :  https://jakub-sznajder.herokuapp.com/
 
 ## Setup
 
@@ -33,7 +33,7 @@ Once the dependencies are installed, you can run  `npm start` to start the appli
 If you find a bug, kindly open an issue [here](https://github.com/donatelek/Portfolio/issues/new).
 
 ## Contact
-Created by [@donatelek](https://donatelek.github.io/Portfolio/) - feel free to contact me!
+Created by [@donatelek](https://jakub-sznajder.herokuapp.com/) - feel free to contact me!
 
 ## License
 This project is licensed under the MIT License.
