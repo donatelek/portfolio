@@ -1,6 +1,6 @@
 section.Aboutme {
   position: relative;
-  height: 800px;
+  height: 650px;
   text-align: center;
 }
 
@@ -39,7 +39,7 @@ section.Aboutme ul {
   }
 }
 
-@media (max-width: 605px) {
+@media (max-width: 665px) {
   section.Aboutme ul {
     height: 150px;
     -ms-flex-wrap: wrap;
@@ -61,7 +61,7 @@ section.Aboutme ul li {
   }
 }
 
-@media (max-width: 605px) {
+@media (max-width: 665px) {
   section.Aboutme ul li {
     height: 50px;
     width: 20%;
@@ -78,7 +78,7 @@ section.Aboutme ul li img {
   }
 }
 
-@media (max-width: 605px) {
+@media (max-width: 665px) {
   section.Aboutme ul li img {
     height: 50px;
   }
@@ -93,9 +93,23 @@ section.Aboutme ul li img {
 section.Aboutme h1 {
   font-size: 40px;
   letter-spacing: 3px;
-  padding: 50px 0;
+  padding: 100px 0 50px 0;
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: -50px;
+}
+
+@media (max-width: 730px) {
+  section.Aboutme h1 {
+    letter-spacing: 1px;
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 435px) {
+  section.Aboutme h1 {
+    font-size: 22px;
+  }
 }
 
 section.Aboutme div {
@@ -104,9 +118,23 @@ section.Aboutme div {
   font-size: 18px;
   letter-spacing: 1.5px;
   padding: 25px 0;
+  font-size: 21px;
+}
+
+@media (max-width: 730px) {
+  section.Aboutme div {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
 }
 
 section.Aboutme h2 {
   margin-top: 50px;
+}
+
+@media (max-width: 730px) {
+  section.Aboutme h2 {
+    font-size: 19px;
+  }
 }
 /*# sourceMappingURL=Aboutme.css.map */

@@ -82,7 +82,8 @@ nav {
             top: 0;
             left: 0;
             width: 100vw;
-            bottom: 0;
+            height: 100vh;
+            overflow: hidden;
         }
 
         @keyframes dissapear {
@@ -169,6 +170,11 @@ nav {
                 letter-spacing: 3px;
                 animation: letterspacing 1s ease-in-out;
 
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
                 @include s-phone {
                     font-size: 28px;
                 }
@@ -190,13 +196,16 @@ nav {
                 margin-top: 120px;
             }
 
-            li:hover {
+            li:hover a {
                 color: black;
             }
+
         }
 
-        ul.nav:hover {
+        ul.nav:hover a {
             color: rgb(122, 122, 122);
+            // background-color: red;
         }
+
     }
 }

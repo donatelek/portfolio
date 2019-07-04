@@ -121,7 +121,7 @@ setTimeout(()=>{
   render() {
     return (
       <div className="contact">
-      <h1>Hire me</h1>
+      <h1 id='contact'>Contact Me</h1>
       <form className="feedback-form" onSubmit={this.handleSubmit}>
       <h2>Your name</h2>
       <input type="text" onChange={this.handleNameChange} value={this.state.name} placeholder="Name"/>

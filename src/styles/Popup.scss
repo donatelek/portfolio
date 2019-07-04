@@ -34,6 +34,12 @@
     }
 }
 
+@mixin MM-phone {
+    @media (max-width: 650px) {
+        @content;
+    }
+}
+
 @mixin M-phone {
     @media (max-width: 625px) {
         @content;
@@ -76,6 +82,7 @@ div.popup {
     animation: fade-in .4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both, letter-space 1s ease;
     overflow-x: hidden;
     letter-spacing: 2px;
+    overflow: hidden;
 
     @keyframes letter-space {
         0% {
@@ -119,6 +126,14 @@ div.popup {
         margin-bottom: 25px;
         padding-bottom: 25px;
 
+        @include MM-phone {
+            // background-color: red;
+            letter-spacing: 0.5px;
+            margin: 0;
+            padding: 0;
+
+        }
+
         @include heightPhone {
             font-size: 15px;
             padding-bottom: 15px;
@@ -133,6 +148,7 @@ div.popup {
         width: 600px;
         height: 400px;
         color: rgb(51, 51, 51);
+        // background-color: red;
 
         @include B-tablet {
             // width: 600px;
@@ -142,6 +158,8 @@ div.popup {
             // left: 50%;
             // transform: translate(-50%, -50%);
         }
+
+
 
         @include heightPhone {
             top: 360px;
@@ -165,6 +183,14 @@ div.popup {
                 // margin: 0;
                 // margin-top: 0px;
                 margin-bottom: 50px;
+            }
+
+            @include MM-phone {
+                // background-color: red;
+                margin-bottom: 10px;
+                margin-top: 60px;
+                font-size: 20px;
+                letter-spacing: 1px;
             }
 
             @include phone {
@@ -191,9 +217,17 @@ div.popup {
                 // margin-left: 100px;
             }
 
+            @include MM-phone {
+                // background-color: red;
+                width: 150px;
+                left: 50%;
+                transform: translateX(-150%);
+            }
+
             @include phone {
                 width: 95px;
-                margin-left: 160px;
+                letter-spacing: 0;
+                // margin-left: 160px;
             }
 
             h1 {
@@ -204,10 +238,16 @@ div.popup {
                 border-bottom: 1px solid grey;
                 width: 100%;
 
+
+
+                @include MM-phone {
+                    padding: 0;
+                    margin-bottom: 10px;
+                }
+
                 @include phone {
-                    font-size: 15px;
-                    padding: 5px 0;
-                    font-size: 14px;
+                    font-size: 17px;
+                    margin-bottom: 0;
                 }
             }
 
@@ -218,6 +258,8 @@ div.popup {
                 font-size: 18px;
                 background: transparent;
                 border: none;
+
+
 
                 @include phone {
                     font-size: 14px;
@@ -248,9 +290,18 @@ div.popup {
 
             }
 
+            @include MM-phone {
+                // background-color: red;
+                width: 150px;
+                // margin-left: 55px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
             @include phone {
                 width: 95px;
-                margin-left: 55px;
+                letter-spacing: 0;
+                // margin-left: 160px;
             }
 
             h1 {
@@ -261,9 +312,14 @@ div.popup {
                 width: 100%;
                 font-size: 20px;
 
+                @include MM-phone {
+                    padding: 0;
+                    margin-bottom: 10px;
+                }
+
                 @include phone {
-                    font-size: 14px;
-                    padding: 5px 0;
+                    font-size: 17px;
+                    margin-bottom: 0;
                 }
             }
 
@@ -301,10 +357,17 @@ div.popup {
                 // margin-left: -30px;
             }
 
+            @include MM-phone {
+                // background-color: red;
+                width: 150px;
+                left: 50%;
+                transform: translateX(50%);
+            }
+
             @include phone {
                 width: 95px;
-                font-size: 14px;
-                margin-left: -50px;
+                letter-spacing: 0;
+                // margin-left: 160px;
             }
 
             h1 {
@@ -315,9 +378,14 @@ div.popup {
                 width: 100%;
                 font-size: 20px;
 
+                @include MM-phone {
+                    padding: 0;
+                    margin-bottom: 10px;
+                }
+
                 @include phone {
-                    font-size: 14px;
-                    padding: 5px 0;
+                    font-size: 17px;
+                    margin-bottom: 0;
                 }
             }
 
@@ -367,6 +435,7 @@ div.popup {
         @include B-phone {
             width: 180px;
             height: 50px;
+            line-height: 50px;
         }
 
         @include M-phone {
@@ -381,10 +450,11 @@ div.popup {
 
         @include MS-phone {
             width: 120px;
-            bottom: 30px;
+            // bottom: 30px;
             height: 40px;
             font-size: 11px;
             letter-spacing: 1px;
+            line-height: 40px;
         }
 
         i {
@@ -430,6 +500,7 @@ div.popup {
         @include B-phone {
             width: 180px;
             height: 50px;
+            line-height: 50px;
         }
 
         @include M-phone {
@@ -444,10 +515,11 @@ div.popup {
 
         @include MS-phone {
             width: 120px;
-            bottom: 30px;
+            // bottom: 30px;
             height: 40px;
             font-size: 11px;
             letter-spacing: 1px;
+            line-height: 40px;
         }
 
         i {

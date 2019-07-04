@@ -16,10 +16,10 @@ const Aboutme = () => {
     return ( 
         <section className="Aboutme" >
          
-          <h1>Few Words About Me</h1>
+          <h1 id='aboutme'>𝓕𝓮𝔀 𝓦𝓸𝓻𝓭𝓼 𝓐𝓫𝓸𝓾𝓽 𝓜𝓮</h1>
            <div>Hi my name is Jakub Sznajder. I am Front-End Developer looking for internship / job in Krakow. I'm positive about new challenges. I learn quickly and contantly develop myself. My hobbies are cryptocurrency trading, music and programming of course.</div>
           
-         <h2>My Abilities</h2>
+         <h2>𝑀𝓎 𝒜𝒷𝒾𝓁𝒾𝓉𝒾𝑒𝓈</h2>
          <Fade right>
           <ul>
             <li><img src={html} alt=""/></li>

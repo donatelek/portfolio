@@ -1,24 +1,27 @@
 import React, { Component } from 'react';
 import '../styles/Hamburger.css';
-import { NONAME } from 'dns';
+// import { data-scroll } from 'smooth-scroll'
 class Hamburger extends Component {
     state = { 
         copiedEmail:false
      }
 
-    handleScrollTo=top=>{
+    handleScrollTo=(top)=>{
         this.props.handleChangePage('main')
         window.scrollTo({
             top,
             left: 0,
             behavior: 'smooth'
           });
+       
     }
+    handleScroll=()=>{
+        this.props.handleChangePage('main')
+    }
+    
     handleCopy=(e)=>{
         this.textArea.select();
     document.execCommand('copy');
-    // This is just personal preference.
-    // I prefer to not show the the whole text area selected.
     e.target.focus();
         this.setState({
             copiedEmail:true
@@ -36,14 +39,18 @@ class Hamburger extends Component {
             <div className='hamburger'>
             <div className="cross" onClick={()=>this.props.handleChangePage('main')} ><i class="fas fa-times"></i></div>
                 <ul className='nav'>
-                    <li className='home'onClick={()=>this.handleScrollTo(0)} >Home</li>
-                    <li onClick={()=>this.handleScrollTo(600)} >Projects</li>
-                    <li onClick={()=>this.handleScrollTo(2600)} >About me</li>
-                    <li onClick={()=>this.handleScrollTo(3300)} >Contact</li>
+                    <li className='home'onClick={()=>this.handleScrollTo(0)} > <a href="" onClick={(e)=> e.preventDefault()}>Home</a></li>
+                    {/* <li onClick={()=>this.handleScrollTo(600)} >Projects</li> */}
+                    {/* <li onClick={()=>this.handleScrollToFromBottom(2500)} >About me</li> */}
+                    {/* <li onClick={this.handleScroll}><a href="#home">Home</a></li> */}
+                    <li onClick={this.handleScroll}><a href="#projects">Projects</a></li>
+                    <li onClick={this.handleScroll}><a href="#aboutme">About me</a></li>
+                    <li onClick={this.handleScroll}><a href="#contact">Contact</a></li>
+                    {/* <li data-scroll onClick={()=>this.handleScrollTo(3700)} >Contact</li> */}
                 </ul>
                 <ul className='icons'>
                     <li><a href="https://github.com/donatelek"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://github.com/donatelek"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/jakub-sznajder"><i class="fab fa-linkedin-in"></i></a></li>
                     <li><i class="fas fa-at" onClick={this.handleCopy}></i></li>
                     
                     <textarea style={{position:'absolute',right:'-1000px'}}
@@ -53,7 +60,7 @@ class Hamburger extends Component {
                 </ul>
                 {this.state.copiedEmail&&<div className="copiedEmail">Copied to clipboard</div>}
             </div>
-            <div className="hamburgerBlur" onClick={()=>this.props.handleChangePage()} ></div>
+            {window.innerWidth>812&&<div className="hamburgerBlur" onClick={()=>this.props.handleChangePage()} ></div>}
             </>
          );
     }

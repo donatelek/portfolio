@@ -27,8 +27,8 @@ class Popup extends Component {
                     <li>PostgreSQL</li>
                     </ul>
                     <ul className='tools'>
-                    <h1>Tools</h1>
-                    <li>Adobe Illustrator</li>
+                    <h1>Used tools</h1>
+                    <li>Illustrator</li>
                     <li>VSCode</li>
                     </ul>
                     </div>

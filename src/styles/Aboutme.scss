@@ -10,6 +10,12 @@
     }
 }
 
+@mixin tablet {
+    @media (max-width: 730px) {
+        @content;
+    }
+}
+
 @mixin mobileIcons {
     @media (max-width: 670px) {
         @content;
@@ -17,7 +23,7 @@
 }
 
 @mixin M-mobileIcons {
-    @media (max-width: 605px) {
+    @media (max-width: 665px) {
         @content;
     }
 }
@@ -30,7 +36,7 @@
 
 section.Aboutme {
     position: relative;
-    height: 800px;
+    height: 650px;
     text-align: center;
 
     ul {
@@ -51,6 +57,8 @@ section.Aboutme {
             margin-left: 5%;
             margin-right: 5%;
         }
+
+
 
         @include mobileIcons {
             margin-left: 0;
@@ -97,9 +105,20 @@ section.Aboutme {
     h1 {
         font-size: 40px;
         letter-spacing: 3px;
-        padding: 50px 0;
+        padding: 100px 0 50px 0;
         margin-left: 10%;
         margin-right: 10%;
+        margin-top: -50px;
+        // background-color: red;
+
+        @include tablet {
+            letter-spacing: 1px;
+            font-size: 27px;
+        }
+
+        @include S-mobileIcons {
+            font-size: 22px;
+        }
     }
 
     div {
@@ -108,9 +127,19 @@ section.Aboutme {
         font-size: 18px;
         letter-spacing: 1.5px;
         padding: 25px 0;
+        font-size: 21px;
+
+        @include tablet {
+            font-size: 16px;
+            letter-spacing: 0.5px;
+        }
     }
 
     h2 {
         margin-top: 50px;
+
+        @include tablet {
+            font-size: 19px;
+        }
     }
 }

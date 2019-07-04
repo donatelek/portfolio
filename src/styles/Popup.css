@@ -12,6 +12,7 @@ div.popup {
           animation: fade-in 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both, letter-space 1s ease;
   overflow-x: hidden;
   letter-spacing: 2px;
+  overflow: hidden;
 }
 
 @-webkit-keyframes letter-space {
@@ -79,6 +80,14 @@ div.popup h2 {
   padding-bottom: 25px;
 }
 
+@media (max-width: 650px) {
+  div.popup h2 {
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 @media (max-height: 710px) {
   div.popup h2 {
     font-size: 15px;
@@ -125,6 +134,15 @@ div.popup .technologies h1.title {
   }
 }
 
+@media (max-width: 650px) {
+  div.popup .technologies h1.title {
+    margin-bottom: 10px;
+    margin-top: 60px;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+
 @media (max-width: 460px) {
   div.popup .technologies h1.title {
     font-size: 15px;
@@ -148,10 +166,19 @@ div.popup .technologies ul.front {
           justify-content: flex-start;
 }
 
+@media (max-width: 650px) {
+  div.popup .technologies ul.front {
+    width: 150px;
+    left: 50%;
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%);
+  }
+}
+
 @media (max-width: 460px) {
   div.popup .technologies ul.front {
     width: 95px;
-    margin-left: 160px;
+    letter-spacing: 0;
   }
 }
 
@@ -164,11 +191,17 @@ div.popup .technologies ul.front h1 {
   width: 100%;
 }
 
+@media (max-width: 650px) {
+  div.popup .technologies ul.front h1 {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 460px) {
   div.popup .technologies ul.front h1 {
-    font-size: 15px;
-    padding: 5px 0;
-    font-size: 14px;
+    font-size: 17px;
+    margin-bottom: 0;
   }
 }
 
@@ -206,10 +239,19 @@ div.popup .technologies ul.back {
           justify-content: flex-start;
 }
 
+@media (max-width: 650px) {
+  div.popup .technologies ul.back {
+    width: 150px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
 @media (max-width: 460px) {
   div.popup .technologies ul.back {
     width: 95px;
-    margin-left: 55px;
+    letter-spacing: 0;
   }
 }
 
@@ -222,10 +264,17 @@ div.popup .technologies ul.back h1 {
   font-size: 20px;
 }
 
+@media (max-width: 650px) {
+  div.popup .technologies ul.back h1 {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 460px) {
   div.popup .technologies ul.back h1 {
-    font-size: 14px;
-    padding: 5px 0;
+    font-size: 17px;
+    margin-bottom: 0;
   }
 }
 
@@ -262,11 +311,19 @@ div.popup .technologies ul.tools {
           justify-content: flex-start;
 }
 
+@media (max-width: 650px) {
+  div.popup .technologies ul.tools {
+    width: 150px;
+    left: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+}
+
 @media (max-width: 460px) {
   div.popup .technologies ul.tools {
     width: 95px;
-    font-size: 14px;
-    margin-left: -50px;
+    letter-spacing: 0;
   }
 }
 
@@ -279,10 +336,17 @@ div.popup .technologies ul.tools h1 {
   font-size: 20px;
 }
 
+@media (max-width: 650px) {
+  div.popup .technologies ul.tools h1 {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 460px) {
   div.popup .technologies ul.tools h1 {
-    font-size: 14px;
-    padding: 5px 0;
+    font-size: 17px;
+    margin-bottom: 0;
   }
 }
 
@@ -339,6 +403,7 @@ div.popup a.github {
   div.popup a.github {
     width: 180px;
     height: 50px;
+    line-height: 50px;
   }
 }
 
@@ -359,10 +424,10 @@ div.popup a.github {
 @media (max-width: 410px) {
   div.popup a.github {
     width: 120px;
-    bottom: 30px;
     height: 40px;
     font-size: 11px;
     letter-spacing: 1px;
+    line-height: 40px;
   }
 }
 
@@ -419,6 +484,7 @@ div.popup a.live {
   div.popup a.live {
     width: 180px;
     height: 50px;
+    line-height: 50px;
   }
 }
 
@@ -439,10 +505,10 @@ div.popup a.live {
 @media (max-width: 410px) {
   div.popup a.live {
     width: 120px;
-    bottom: 30px;
     height: 40px;
     font-size: 11px;
     letter-spacing: 1px;
+    line-height: 40px;
   }
 }
 

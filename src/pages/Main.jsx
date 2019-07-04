@@ -4,7 +4,7 @@ import '../styles/Main.css'
 const Main = () => {
    const handleScrollContact=()=>{
     window.scrollTo({
-        top: 3300,
+        top: 4000,
         left: 0,
         behavior: 'smooth'
       });

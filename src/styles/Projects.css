@@ -1,12 +1,68 @@
 section.Projects {
   position: relative;
-  height: 2600px;
+  height: 2650px;
+  padding-top: 100px;
+  margin-top: -100px;
   text-align: center;
 }
 
 @media (max-width: 1120px) {
   section.Projects {
-    height: 2000px;
+    height: 2100px;
+  }
+}
+
+@media (max-width: 755px) {
+  section.Projects {
+    height: 1970px;
+  }
+}
+
+@media (max-width: 702px) {
+  section.Projects {
+    height: 1870px;
+  }
+}
+
+@media (max-width: 651px) {
+  section.Projects {
+    height: 1770px;
+  }
+}
+
+@media (max-width: 601px) {
+  section.Projects {
+    height: 1650px;
+  }
+}
+
+@media (max-width: 540px) {
+  section.Projects {
+    height: 1530px;
+  }
+}
+
+@media (max-width: 490px) {
+  section.Projects {
+    height: 1400px;
+  }
+}
+
+@media (max-width: 435px) {
+  section.Projects {
+    height: 1270px;
+  }
+}
+
+@media (max-width: 395px) {
+  section.Projects {
+    height: 1230px;
+  }
+}
+
+@media (max-width: 351px) {
+  section.Projects {
+    height: 1150px;
   }
 }
 
