@@ -1,92 +1,302 @@
 section.Aboutme {
   position: relative;
-  height: 650px;
+  height: 1050px;
   text-align: center;
+  margin-top: 100px;
 }
 
-section.Aboutme ul {
+@media (max-width: 800px) {
+  section.Aboutme {
+    height: 1500px;
+  }
+}
+
+section.Aboutme ul.skillsTitleWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 80vw;
+  margin: 0 auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 50px auto 0 auto;
-  max-width: 1800px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-top: 50px;
 }
 
-@media (max-width: 1240px) {
-  section.Aboutme ul {
-    margin-left: 0;
-    margin-right: 0;
-    margin: 50px auto 0 auto;
+@media (max-width: 840px) {
+  section.Aboutme ul.skillsTitleWrapper {
+    width: 100vw;
   }
 }
 
-@media (max-width: 1020px) {
-  section.Aboutme ul {
-    margin-left: 5%;
-    margin-right: 5%;
+@media (max-width: 800px) {
+  section.Aboutme ul.skillsTitleWrapper {
+    display: none;
   }
 }
 
-@media (max-width: 670px) {
-  section.Aboutme ul {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 665px) {
-  section.Aboutme ul {
-    height: 150px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-section.Aboutme ul li {
-  height: 100px;
+section.Aboutme ul.skillsTitleWrapper li {
+  width: 700px;
+  font-size: 27px;
+  letter-spacing: 2px;
   list-style-type: none;
 }
 
-@media (max-width: 1020px) {
-  section.Aboutme ul li {
-    height: 60px;
+@media (max-width: 840px) {
+  section.Aboutme ul.skillsTitleWrapper li {
+    width: 35%;
   }
 }
 
-@media (max-width: 665px) {
-  section.Aboutme ul li {
-    height: 50px;
-    width: 20%;
+section.Aboutme ul.skillsWrapper {
+  width: 80vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+}
+
+@media (max-width: 840px) {
+  section.Aboutme ul.skillsWrapper {
+    width: 100vw;
   }
 }
 
-section.Aboutme ul li img {
-  height: 100px;
-}
-
-@media (max-width: 1020px) {
-  section.Aboutme ul li img {
-    height: 60px;
+@media (max-width: 800px) {
+  section.Aboutme ul.skillsWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
-@media (max-width: 665px) {
-  section.Aboutme ul li img {
-    height: 50px;
+section.Aboutme ul.skillsWrapper h1.mobileSkillsTitle {
+  display: none;
+  font-size: 25px;
+}
+
+@media (max-width: 800px) {
+  section.Aboutme ul.skillsWrapper h1.mobileSkillsTitle {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
-@media (max-width: 435px) {
-  section.Aboutme ul li img {
-    height: 38px;
+section.Aboutme ul.skillsWrapper ul.frontWrapper {
+  width: 700px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 840px) {
+  section.Aboutme ul.skillsWrapper ul.frontWrapper {
+    width: 35%;
+  }
+}
+
+@media (max-width: 800px) {
+  section.Aboutme ul.skillsWrapper ul.frontWrapper {
+    height: unset;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+section.Aboutme ul.skillsWrapper ul.frontWrapper li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 10px;
+  border-left: 1px solid black;
+  padding-left: 10px;
+  -webkit-transition: .2s ease border-left;
+  transition: .2s ease border-left;
+  cursor: pointer;
+  width: 200px;
+}
+
+section.Aboutme ul.skillsWrapper ul.frontWrapper li:hover {
+  border-left: 3px solid black;
+}
+
+section.Aboutme ul.skillsWrapper ul.frontWrapper li div {
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+}
+
+@media (max-width: 730px) {
+  section.Aboutme ul.skillsWrapper ul.frontWrapper li div {
+    font-size: 20px;
+  }
+}
+
+section.Aboutme ul.skillsWrapper ul.frontWrapper li img {
+  width: 35px;
+  margin-right: 10px;
+}
+
+@media (max-width: 730px) {
+  section.Aboutme ul.skillsWrapper ul.frontWrapper li img {
+    width: 28px;
+  }
+}
+
+section.Aboutme ul.skillsWrapper ul.backWrapper {
+  width: 700px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 840px) {
+  section.Aboutme ul.skillsWrapper ul.backWrapper {
+    width: 35%;
+  }
+}
+
+@media (max-width: 800px) {
+  section.Aboutme ul.skillsWrapper ul.backWrapper {
+    height: unset;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+section.Aboutme ul.skillsWrapper ul.backWrapper li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 10px;
+  border-left: 1px solid black;
+  padding-left: 10px;
+  -webkit-transition: .2s ease border-left;
+  transition: .2s ease border-left;
+  cursor: pointer;
+  width: 200px;
+}
+
+section.Aboutme ul.skillsWrapper ul.backWrapper li:hover {
+  border-left: 3px solid black;
+}
+
+section.Aboutme ul.skillsWrapper ul.backWrapper li div {
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+}
+
+@media (max-width: 730px) {
+  section.Aboutme ul.skillsWrapper ul.backWrapper li div {
+    font-size: 20px;
+  }
+}
+
+section.Aboutme ul.skillsWrapper ul.backWrapper li img {
+  width: 35px;
+  margin-right: 10px;
+}
+
+@media (max-width: 730px) {
+  section.Aboutme ul.skillsWrapper ul.backWrapper li img {
+    width: 28px;
+  }
+}
+
+section.Aboutme ul.skillsWrapper ul.toolsWrapper {
+  width: 700px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 840px) {
+  section.Aboutme ul.skillsWrapper ul.toolsWrapper {
+    width: 35%;
+  }
+}
+
+@media (max-width: 800px) {
+  section.Aboutme ul.skillsWrapper ul.toolsWrapper {
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: unset;
+  }
+}
+
+section.Aboutme ul.skillsWrapper ul.toolsWrapper li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 10px;
+  border-left: 1px solid black;
+  padding-left: 10px;
+  -webkit-transition: .2s ease border-left;
+  transition: .2s ease border-left;
+  cursor: pointer;
+  width: 200px;
+}
+
+section.Aboutme ul.skillsWrapper ul.toolsWrapper li:hover {
+  border-left: 3px solid black;
+}
+
+section.Aboutme ul.skillsWrapper ul.toolsWrapper li div {
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+}
+
+@media (max-width: 730px) {
+  section.Aboutme ul.skillsWrapper ul.toolsWrapper li div {
+    font-size: 20px;
+  }
+}
+
+section.Aboutme ul.skillsWrapper ul.toolsWrapper li img {
+  width: 35px;
+  margin-right: 10px;
+}
+
+@media (max-width: 730px) {
+  section.Aboutme ul.skillsWrapper ul.toolsWrapper li img {
+    width: 28px;
   }
 }
 
@@ -116,14 +326,13 @@ section.Aboutme div {
   margin-left: 10%;
   margin-right: 10%;
   font-size: 18px;
-  letter-spacing: 1.5px;
   padding: 25px 0;
   font-size: 21px;
 }
 
 @media (max-width: 730px) {
   section.Aboutme div {
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 0.5px;
   }
 }

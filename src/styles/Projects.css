@@ -12,63 +12,16 @@ section.Projects {
   }
 }
 
-@media (max-width: 755px) {
-  section.Projects {
-    height: 1970px;
-  }
-}
-
-@media (max-width: 702px) {
-  section.Projects {
-    height: 1870px;
-  }
-}
-
-@media (max-width: 651px) {
-  section.Projects {
-    height: 1770px;
-  }
-}
-
-@media (max-width: 601px) {
-  section.Projects {
-    height: 1650px;
-  }
-}
-
-@media (max-width: 540px) {
-  section.Projects {
-    height: 1530px;
-  }
-}
-
-@media (max-width: 490px) {
-  section.Projects {
-    height: 1400px;
-  }
-}
-
-@media (max-width: 435px) {
-  section.Projects {
-    height: 1270px;
-  }
-}
-
-@media (max-width: 395px) {
-  section.Projects {
-    height: 1230px;
-  }
-}
-
-@media (max-width: 351px) {
-  section.Projects {
-    height: 1150px;
-  }
-}
-
 @media (max-width: 812px) {
   section.Projects {
     width: 100vw;
+    height: 1500px;
+  }
+}
+
+@media (max-width: 730px) {
+  section.Projects {
+    height: 1700px;
   }
 }
 
@@ -126,6 +79,20 @@ section.Projects ul {
   }
 }
 
+section.Projects ul .projectNameMobile {
+  padding: 0;
+  margin: 0;
+  display: none;
+  margin-top: 25px;
+  font-size: 21px;
+}
+
+@media (max-width: 730px) {
+  section.Projects ul .projectNameMobile {
+    display: block;
+  }
+}
+
 @media (max-width: 812px) {
   section.Projects ul {
     height: 0px;
@@ -140,7 +107,6 @@ section.Projects ul li {
   width: 100%;
   height: 350px;
   list-style-type: none;
-  border: 1px solid black;
 }
 
 section.Projects ul li.b {
@@ -161,7 +127,10 @@ section.Projects ul li.b {
 
 @media (max-width: 812px) {
   section.Projects ul li.b {
-    height: 55vw;
+    background-size: 110%;
+    background-position: center;
+    width: 100vw;
+    height: 300px;
     margin: 0;
     margin-top: 20px;
   }
@@ -169,13 +138,16 @@ section.Projects ul li.b {
 
 @media (max-width: 520px) {
   section.Projects ul li.b {
-    height: 55vw;
+    background-size: 170%;
+    background-position: center;
+    width: 100vw;
+    height: 280px;
   }
 }
 
 section.Projects ul li.d {
   height: 550px;
-  background: url("../img/cryptotool.png");
+  background: url("../img/screenshot.png");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -192,14 +164,20 @@ section.Projects ul li.d {
 @media (max-width: 812px) {
   section.Projects ul li.d {
     margin: 0;
-    height: 55vw;
+    background-size: 110%;
+    background-position: center;
+    width: 100vw;
+    height: 300px;
     margin-top: 20px;
   }
 }
 
 @media (max-width: 520px) {
   section.Projects ul li.d {
-    height: 55vw;
+    background-size: 170%;
+    background-position: center;
+    width: 100vw;
+    height: 280px;
   }
 }
 
@@ -221,7 +199,10 @@ section.Projects ul li.c {
 
 @media (max-width: 812px) {
   section.Projects ul li.c {
-    height: 55vw;
+    background-size: 110%;
+    background-position: center;
+    width: 100vw;
+    height: 300px;
     margin: 0;
     margin-top: 20px;
   }
@@ -229,7 +210,10 @@ section.Projects ul li.c {
 
 @media (max-width: 520px) {
   section.Projects ul li.c {
-    height: 55vw;
+    background-size: 170%;
+    background-position: center;
+    width: 100vw;
+    height: 280px;
   }
 }
 
@@ -252,14 +236,20 @@ section.Projects ul li {
 
 @media (max-width: 812px) {
   section.Projects ul li {
-    height: 55vw;
+    background-size: 110%;
+    background-position: center;
+    width: 100vw;
+    height: 300px;
     margin: 0;
   }
 }
 
 @media (max-width: 520px) {
   section.Projects ul li {
-    height: 55vw;
+    background-size: 170%;
+    background-position: center;
+    width: 100vw;
+    height: 280px;
   }
 }
 
@@ -275,13 +265,6 @@ section.Projects ul li div.aboutA {
   color: black;
   display: none;
   cursor: pointer;
-}
-
-@media (max-width: 730px) {
-  section.Projects ul li div.aboutA {
-    display: block;
-    background: rgba(255, 255, 255, 0.301);
-  }
 }
 
 section.Projects ul li div.aboutA h1 {
@@ -303,12 +286,6 @@ section.Projects ul li div.aboutA h1 {
     width: 400px;
     height: 20px;
     padding: 0;
-  }
-}
-
-@media (max-width: 730px) {
-  section.Projects ul li div.aboutA h1 {
-    color: black;
   }
 }
 
@@ -336,12 +313,6 @@ section.Projects ul li div.aboutA h2 {
     width: 400px;
     height: 20px;
     padding: 0;
-  }
-}
-
-@media (max-width: 730px) {
-  section.Projects ul li div.aboutA h2 {
-    color: black;
   }
 }
 

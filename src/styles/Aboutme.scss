@@ -10,6 +10,18 @@
     }
 }
 
+@mixin B-tablet {
+    @media (max-width: 840px) {
+        @content;
+    }
+}
+
+@mixin M-tablet {
+    @media (max-width: 800px) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media (max-width: 730px) {
         @content;
@@ -35,68 +47,228 @@
 }
 
 section.Aboutme {
+
     position: relative;
-    height: 650px;
+    height: 1050px;
     text-align: center;
+    margin-top: 100px;
 
-    ul {
+    // background-color: rgb(243, 237, 231);
+    @include M-tablet() {
+        height: 1500px;
+    }
+
+    ul.skillsTitleWrapper {
         display: flex;
+        width: 80vw;
+        margin: 0 auto;
         justify-content: space-between;
-        margin: 50px auto 0 auto;
-        max-width: 1800px;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-top: 50px;
 
-        @include desktopIcons {
-            margin-left: 0;
-            margin-right: 0;
-            margin: 50px auto 0 auto;
+        @include B-tablet() {
+            width: 100vw;
         }
 
-        @include tabletIcons {
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-
-
-
-        @include mobileIcons {
-            margin-left: 0;
-            margin-right: 0;
-        }
-
-        @include M-mobileIcons {
-            height: 150px;
-            flex-wrap: wrap;
-            justify-content: center;
+        @include M-tablet() {
+            display: none;
         }
 
         li {
-            height: 100px;
+            width: 700px;
+            font-size: 27px;
+            letter-spacing: 2px;
             list-style-type: none;
 
-            @include tabletIcons {
-                height: 60px;
+            @include B-tablet() {
+                width: 35%;
+            }
+        }
+    }
+
+    ul.skillsWrapper {
+        width: 80vw;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 25px;
+
+        @include B-tablet() {
+            width: 100vw;
+        }
+
+        @include M-tablet() {
+            flex-direction: column;
+        }
+
+        h1.mobileSkillsTitle {
+            display: none;
+            font-size: 25px;
+
+            @include M-tablet() {
+                display: block;
+                margin: 0;
+                padding: 0;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+        }
+
+        ul.frontWrapper {
+            width: 700px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+
+            @include B-tablet() {
+                width: 35%;
             }
 
-            @include M-mobileIcons {
-                height: 50px;
-                width: 20%;
+            @include M-tablet() {
+                height: unset;
+                margin-left: 50%;
+                transform: translateX(-50%);
             }
 
-            img {
-                height: 100px;
+            li {
+                list-style-type: none;
+                display: flex;
+                margin-left: 50%;
+                transform: translateX(-50%);
+                margin-top: 10px;
+                border-left: 1px solid black;
+                padding-left: 10px;
+                transition: .2s ease border-left;
+                cursor: pointer;
+                width: 200px;
 
-                @include tabletIcons {
-                    height: 60px;
+
+
+                &:hover {
+                    border-left: 3px solid black;
                 }
 
-                @include M-mobileIcons {
-                    height: 50px;
+                div {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 25px;
+
+                    @include tablet {
+                        font-size: 20px;
+                    }
                 }
 
-                @include S-mobileIcons {
-                    height: 38px;
+                img {
+                    width: 35px;
+                    margin-right: 10px;
+
+                    @include tablet {
+                        width: 28px;
+                    }
+                }
+            }
+        }
+
+        ul.backWrapper {
+            width: 700px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+
+            @include B-tablet() {
+                width: 35%;
+            }
+
+            @include M-tablet() {
+                height: unset;
+                margin-left: 50%;
+                transform: translateX(-50%);
+            }
+
+            li {
+                list-style-type: none;
+                display: flex;
+                margin-left: 50%;
+                transform: translateX(-50%);
+                margin-top: 10px;
+                border-left: 1px solid black;
+                padding-left: 10px;
+                transition: .2s ease border-left;
+                cursor: pointer;
+                width: 200px;
+
+                &:hover {
+                    border-left: 3px solid black;
+                }
+
+                div {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 25px;
+
+                    @include tablet {
+                        font-size: 20px;
+                    }
+                }
+
+                img {
+                    width: 35px;
+                    margin-right: 10px;
+
+                    @include tablet {
+                        width: 28px;
+                    }
+                }
+            }
+        }
+
+        ul.toolsWrapper {
+            width: 700px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+
+            @include B-tablet() {
+                width: 35%;
+            }
+
+            @include M-tablet() {
+                margin-left: 50%;
+                transform: translateX(-50%);
+                height: unset;
+            }
+
+            li {
+                list-style-type: none;
+                display: flex;
+                margin-left: 50%;
+                transform: translateX(-50%);
+                margin-top: 10px;
+                border-left: 1px solid black;
+                padding-left: 10px;
+                transition: .2s ease border-left;
+                cursor: pointer;
+                width: 200px;
+
+                &:hover {
+                    border-left: 3px solid black;
+                }
+
+                div {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 25px;
+
+                    @include tablet {
+                        font-size: 20px;
+                    }
+                }
+
+                img {
+                    width: 35px;
+                    margin-right: 10px;
+
+                    @include tablet {
+                        width: 28px;
+                    }
                 }
             }
         }
@@ -125,12 +297,12 @@ section.Aboutme {
         margin-left: 10%;
         margin-right: 10%;
         font-size: 18px;
-        letter-spacing: 1.5px;
+        // letter-spacing: 1.5px;
         padding: 25px 0;
         font-size: 21px;
 
         @include tablet {
-            font-size: 16px;
+            font-size: 18px;
             letter-spacing: 0.5px;
         }
     }

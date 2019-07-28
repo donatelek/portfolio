@@ -12,60 +12,6 @@
 
 
 
-@mixin projects1 {
-    @media (max-width: 755px) {
-        @content;
-    }
-}
-
-
-@mixin projects2 {
-    @media (max-width: 702px) {
-        @content;
-    }
-}
-
-@mixin projects3 {
-    @media (max-width: 651px) {
-        @content;
-    }
-}
-
-@mixin projects4 {
-    @media (max-width: 601px) {
-        @content;
-    }
-}
-
-@mixin projects5 {
-    @media (max-width: 540px) {
-        @content;
-    }
-}
-
-@mixin projects6 {
-    @media (max-width: 490px) {
-        @content;
-    }
-}
-
-@mixin projects7 {
-    @media (max-width: 435px) {
-        @content;
-    }
-}
-
-@mixin projects8 {
-    @media (max-width: 395px) {
-        @content;
-    }
-}
-
-@mixin projects9 {
-    @media (max-width: 351px) {
-        @content;
-    }
-}
 
 
 @mixin mini-tablet {
@@ -85,51 +31,21 @@ section.Projects {
     height: 2650px;
     padding-top: 100px;
     margin-top: -100px;
-
     text-align: center;
 
     @include desktop {
         height: 2100px;
     }
 
-    @include projects1 {
-        height: 1970px;
-    }
 
-    @include projects2 {
-        height: 1870px;
-    }
-
-    @include projects3 {
-        height: 1770px;
-    }
-
-    @include projects4 {
-        height: 1650px;
-    }
-
-    @include projects5 {
-        height: 1530px;
-    }
-
-    @include projects6 {
-        height: 1400px;
-    }
-
-    @include projects7 {
-        height: 1270px;
-    }
-
-    @include projects8 {
-        height: 1230px;
-    }
-
-    @include projects9 {
-        height: 1150px;
-    }
 
     @include tablet {
         width: 100vw;
+        height: 1500px;
+    }
+
+    @include mini-tablet {
+        height: 1700px;
     }
 
     h1 {
@@ -172,7 +88,19 @@ section.Projects {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
         // background-color: red;
+        .projectNameMobile {
+            padding: 0;
+            margin: 0;
+            display: none;
+            margin-top: 25px;
+            font-size: 21px;
+
+            @include mini-tablet {
+                display: block;
+            }
+        }
 
         @include tablet {
             height: 0px;
@@ -186,7 +114,7 @@ section.Projects {
             width: 100%;
             height: 350px;
             list-style-type: none;
-            border: 1px solid black;
+            // border: 1px solid black;
             // background-color: blue;
         }
 
@@ -204,20 +132,28 @@ section.Projects {
             }
 
             @include tablet {
-                height: 55vw;
+                // height: 55vw;
+                background-size: 110%;
+                background-position: center;
+                width: 100vw;
+                height: 300px;
                 margin: 0;
                 margin-top: 20px;
             }
 
             @include phone {
-                height: 55vw;
+                // height: 55vw;
+                background-size: 170%;
+                background-position: center;
+                width: 100vw;
+                height: 280px;
             }
 
         }
 
         li.d {
             height: 550px;
-            background: url('../img/cryptotool.png');
+            background: url('../img/screenshot.png');
             background-size: 100% 100%;
             background-position: center;
             background-repeat: no-repeat;
@@ -230,12 +166,20 @@ section.Projects {
 
             @include tablet {
                 margin: 0;
-                height: 55vw;
+                // height: 55vw;
+                background-size: 110%;
+                background-position: center;
+                width: 100vw;
+                height: 300px;
                 margin-top: 20px;
             }
 
             @include phone {
-                height: 55vw;
+                // height: 55vw;
+                background-size: 170%;
+                background-position: center;
+                width: 100vw;
+                height: 280px;
             }
         }
 
@@ -254,13 +198,21 @@ section.Projects {
             }
 
             @include tablet {
-                height: 55vw;
+                // height: 55vw;
+                background-size: 110%;
+                background-position: center;
+                width: 100vw;
+                height: 300px;
                 margin: 0;
                 margin-top: 20px;
             }
 
             @include phone {
-                height: 55vw;
+                // height: 55vw;
+                background-size: 170%;
+                background-position: center;
+                width: 100vw;
+                height: 280px;
             }
         }
 
@@ -270,12 +222,20 @@ section.Projects {
             }
 
             @include tablet {
-                height: 55vw;
+                // height: 55vw;
+                background-size: 110%;
+                background-position: center;
+                width: 100vw;
+                height: 300px;
                 margin: 0;
             }
 
             @include phone {
-                height: 55vw;
+                // height: 55vw;
+                background-size: 170%;
+                background-position: center;
+                width: 100vw;
+                height: 280px;
             }
 
             height: 550px;
@@ -300,11 +260,6 @@ section.Projects {
                 display: none;
                 cursor: pointer;
 
-                @include mini-tablet {
-                    display: block;
-                    background: rgba(255, 255, 255, 0.301);
-                }
-
                 h1 {
                     font-size: 23px;
                     font-weight: bold;
@@ -324,9 +279,7 @@ section.Projects {
                         padding: 0;
                     }
 
-                    @include mini-tablet {
-                        color: black;
-                    }
+
 
                     @include phone {
                         font-size: 17px;
@@ -351,9 +304,7 @@ section.Projects {
                         padding: 0;
                     }
 
-                    @include mini-tablet {
-                        color: black;
-                    }
+
 
                     @include phone {
                         height: 50px;

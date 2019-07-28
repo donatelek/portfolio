@@ -18,7 +18,7 @@ class Popup extends Component {
                         <li>CSS</li>
                         <li>Javascript</li>
                         <li>React</li>
-                        <li>Node.js</li>
+                        <li>Redux</li>
                     </ul>
                     <ul className='back'>
                     <h1>Back-End</h1>
@@ -33,7 +33,7 @@ class Popup extends Component {
                     </ul>
                     </div>
                     <a href='https://edmchallenge.herokuapp.com/' className="live">Check Live <i class="fas fa-long-arrow-alt-right"></i></a>
-                    <a href='https://github.com/donatelek/EDM-Challenge-Frontend' className="github">View On Github <i class="fas fa-long-arrow-alt-right"></i></a>
+                    <a href='https://github.com/donatelek/EDM-Challenge' className="github">View On Github <i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>
                 )
             }else if(this.props.projectNumber===2){
@@ -50,7 +50,6 @@ class Popup extends Component {
                         <li>CSS</li>
                         <li>Javascript</li>
                         <li>React</li>
-                        <li>Node.js</li>
                     </ul>
                     <ul className='back'>
                     <h1>Back-End</h1>
@@ -59,13 +58,13 @@ class Popup extends Component {
                     <li>PostgreSQL</li>
                     </ul>
                     <ul className='tools'>
-                    <h1>Tools</h1>
-                    <li>Adobe Illustrator</li>
+                    <h1>Used tools</h1>
+                    <li>Illustrator</li>
                     <li>VScode</li>
                     </ul>
                     </div>
                     <a href='https://ph-store.herokuapp.com/' className="live">Check Live <i class="fas fa-long-arrow-alt-right"></i></a>
-                    <a href='https://github.com/donatelek/PH-STORE-Frontend' className="github">View On Github <i class="fas fa-long-arrow-alt-right"></i></a>
+                    <a href='https://github.com/donatelek/PH-STORE' className="github">View On Github <i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>
                 )
             }else if(this.props.projectNumber===3){
@@ -78,23 +77,22 @@ class Popup extends Component {
                     <h1 className='title'>Used tools and technologies</h1>
                     <ul className='front'>
                         <h1>Front-End</h1>
-                        <li>Html</li>
-                        <li>Scss</li>
+                        <li>HTML</li>
+                        <li>SCSS</li>
                         <li>Javascript</li>
                         <li>React</li>
-                        <li>Node.js</li>
                     </ul>
                     <ul className='back'>
                     <h1>Back-End</h1>
                     <li>------</li>
                     </ul>
                     <ul className='tools'>
-                    <h1>Tools</h1>
-                    <li>Adobe Illustrator</li>
+                    <h1>Used tools</h1>
+                    <li>Illustrator</li>
                     <li>VScode</li>
                     </ul>
                     </div>
-                    <a href='https://ph-store.herokuapp.com/' className="live">Check Live <i class="fas fa-long-arrow-alt-right"></i></a>
+                    <a href='https://jakub-sznajder.herokuapp.com' className="live">Check Live <i class="fas fa-long-arrow-alt-right"></i></a>
                     <a href='https://github.com/donatelek/Portfolio' className="github">View On Github <i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>
                 )
@@ -109,24 +107,25 @@ class Popup extends Component {
                     <ul className='front'>
                         <h1>Front-End</h1>
                         <li>HTML</li>
-                        <li>CSS</li>
+                        <li>SCSS</li>
                         <li>JAVASCRIPT</li>
                         <li>React</li>
-                        <li>Node.js</li>
+                        <li>Redux</li>
                     </ul>
                     <ul className='back'>
                     <h1>Back-End</h1>
                     <li>Node.js</li>
                     <li>Express.js</li>
-                    <li>PostgreSQL</li>
+                    <li>SQL</li>
                     </ul>
                     <ul className='tools'>
-                    <h1>Tools</h1>
-                    <li>Adobe Illustrator</li>
+                    <h1>Used tools</h1>
+                    <li>Illustrator</li>
+                    <li>VScode</li>
                     </ul>
                     </div>
                     <a  className="live">In build <i class="fas fa-long-arrow-alt-right"></i></a>
-                    <a className="github">In build <i class="fas fa-long-arrow-alt-right"></i></a>
+                    <a href='https://github.com/donatelek/Crypto-Bit-Trader' className="github">View On Github <i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>
                 )
             }
@@ -135,7 +134,6 @@ class Popup extends Component {
             <div>
                     <div className="hiderest" onClick={()=>this.props.handleChangePage('main')} ></div>
                     {popup()}
-                    
             </div>
            
          );
