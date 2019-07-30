@@ -76,7 +76,9 @@ main.main {
 
         @include phone {
             width: 100%;
-            font-size: 32px;
+            font-size: 28px;
+            margin-left: 2%;
+            margin-right: 2%;
         }
     }
 
@@ -88,7 +90,9 @@ main.main {
 
         @include phone {
             width: 100%;
-            font-size: 22px;
+            font-size: 20px;
+            margin-left: 2%;
+            margin-right: 2%;
         }
 
         position: absolute;
@@ -112,8 +116,12 @@ main.main {
         padding: 15px 35px;
         cursor: pointer;
 
+        @include phone {
+            padding: 12px 30px;
+        }
+
         @include S-phone {
-            padding: 10px 27px;
+            padding: 11px 30px;
         }
 
         i {
