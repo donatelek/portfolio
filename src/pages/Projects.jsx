@@ -22,7 +22,7 @@ class Projects extends Component {
                 <h1>My Projects</h1>
                 <ul className="projects">
 
-                    <h1 className='projectNameMobile'>EDM challenge</h1>
+                    <h1 className='projectNameMobile projectNameMobileFirst'>EDM challenge</h1>
                     <li className='a' onClick={() => {
                         this.props.handleChangePage('project')
                         this.handleChangeProjectNumber(1)

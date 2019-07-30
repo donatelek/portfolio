@@ -83,8 +83,12 @@ section.Projects ul .projectNameMobile {
   padding: 0;
   margin: 0;
   display: none;
-  margin-top: 25px;
   font-size: 21px;
+  margin-top: 20px;
+}
+
+section.Projects ul .projectNameMobileFirst {
+  margin-bottom: 20px;
 }
 
 @media (max-width: 730px) {
