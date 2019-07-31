@@ -385,11 +385,31 @@ section.Projects {
 
         li:hover div.aboutA {
             display: block;
+
+            @include tablet {
+                display: none;
+            }
         }
 
         li:hover {
             border: 15px solid white;
             background-size: 120% 120%;
+
+            @include tablet {
+                border: none;
+                background-position: center;
+                background-size: 110%; // width: 100vw;
+                // height: 300px;
+                // margin: 0;
+            }
+
+            @include phone {
+                border: none;
+                background-size: 170%;
+                background-position: center;
+                width: 100vw;
+                height: 280px;
+            }
         }
     }
 }

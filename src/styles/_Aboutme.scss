@@ -46,6 +46,12 @@
     }
 }
 
+@mixin mini-mobileIcons {
+    @media (max-width: 383px) {
+        @content;
+    }
+}
+
 section.Aboutme {
 
     position: relative;
@@ -110,6 +116,10 @@ section.Aboutme {
                 margin-top: 30px;
                 margin-bottom: 30px;
             }
+
+            @include mini-mobileIcons {
+                font-size: 21px;
+            }
         }
 
         ul.frontWrapper {
@@ -140,7 +150,9 @@ section.Aboutme {
                 cursor: pointer;
                 width: 200px;
 
-
+                @include M-tablet() {
+                    height: unset;
+                }
 
                 &:hover {
                     border-left: 3px solid black;

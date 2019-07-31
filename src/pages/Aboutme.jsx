@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Aboutme.css'
 import html from '../img/html.png'
 import css from '../img/css.png'
 import js from '../img/js.png'
@@ -7,20 +6,17 @@ import react from '../img/react.png'
 import postgres from '../img/postgresql.png'
 import nodejs from '../img/nodejs.png'
 import illustrator from '../img/illustrator.png'
-import sass from '../img/sass.png'
 import vsc from '../img/vsc.png'
+import express from '../img/express.png'
 import redux from '../img/redux.png'
-import { Roll, Fade } from 'react-reveal'
+import github from '../img/github.svg'
+import { Fade } from 'react-reveal'
 
 const Aboutme = () => {
   return (
     <section className="Aboutme" >
-
-      {/* <h1 id='aboutme'>𝓕𝓮𝔀 𝓦𝓸𝓻𝓭𝓼 𝓐𝓫𝓸𝓾𝓽 𝓜𝓮</h1> */}
       <h1 id='aboutme'>About me</h1>
       <div>Hi my name is Jakub Sznajder. I am Front-End Developer looking for internship / job in Krakow. I'm positive about new challenges. I learn quickly and contantly develop myself. My hobbies are cryptocurrency trading, music and programming of course.</div>
-
-      {/* <h2>𝑀𝓎 𝒜𝒷𝒾𝓁𝒾𝓉𝒾𝑒𝓈</h2> */}
       <h2>My Skills</h2>
       <Fade right>
         <ul className='skillsTitleWrapper'>
@@ -31,14 +27,13 @@ const Aboutme = () => {
         <ul className='skillsWrapper'>
           <ul className="frontWrapper">
             <h1 className="mobileSkillsTitle">Front-End</h1>
-
             <li>
               <img src={html} alt="" />
               <div>HTML</div>
             </li>
             <li>
               <img src={css} alt="" />
-              <div>CSS</div>
+              <div>CSS/SASS</div>
             </li>
             <li>
               <img src={js} alt="" />
@@ -55,10 +50,13 @@ const Aboutme = () => {
           </ul>
           <ul className="backWrapper">
             <h1 className="mobileSkillsTitle">Back-End</h1>
-
             <li>
               <img src={nodejs} alt="" />
               <div>Node</div>
+            </li>
+            <li>
+              <img src={express} alt="" />
+              <div>Express</div>
             </li>
             <li>
               <img src={postgres} alt="" />
@@ -73,8 +71,8 @@ const Aboutme = () => {
               <div>Illustrator</div>
             </li>
             <li>
-              <img src={sass} alt="" />
-              <div>SASS</div>
+              <img src={github} alt="" />
+              <div>Git/GitFlow</div>
             </li>
             <li>
               <img src={vsc} alt="" />

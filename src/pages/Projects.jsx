@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/Projects.css';
 import Popup from './Popup';
-import LightSpeed from 'react-reveal/Zoom';
 
 class Projects extends Component {
     state = {
@@ -18,7 +16,6 @@ class Projects extends Component {
         return (
             <section className="Projects" id='projects'>
                 {this.props.page === 'project' && <Popup handleChangePage={this.props.handleChangePage} page={this.props.page} projectNumber={this.state.projectNumber} />}
-                {/* <h1>𝓒𝓱𝓮𝓬𝓴 𝓸𝓾𝓽 𝓶𝔂 𝓹𝓻𝓸𝓳𝓮𝓬𝓽𝓼</h1> */}
                 <h1>My Projects</h1>
                 <ul className="projects">
 
