@@ -17,7 +17,7 @@ class Nav extends Component {
                 <div className="logo" onClick={() => this.handleScrollHome(document.body, 0, 1250)} >SZNAJDER</div>
                 <div className="hamburgerIcon" onClick={() => this.props.handleChangePage('nav')}>
                     <div className="menu">Menu</div>
-                    <i class="fas fa-bars"></i>
+                    <i className="fas fa-bars"></i>
                 </div>
                 {this.props.page === 'nav' && <Hamburger handleChangePage={this.props.handleChangePage} />}
             </nav>

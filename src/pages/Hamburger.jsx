@@ -35,23 +35,20 @@ class Hamburger extends Component {
         return (
             <>
                 <div className='hamburger'>
-                    <div className="cross" onClick={() => this.props.handleChangePage('main')} ><i class="fas fa-times"></i></div>
+                    <div className="cross" onClick={() => this.props.handleChangePage('main')} ><i className="fas fa-times"></i></div>
                     <ul className='nav'>
-                        <li className='home' onClick={() => this.handleScrollTo(0)} > <a href="#" onClick={(e) => e.preventDefault()}>Home</a></li>
-                        {/* <li onClick={()=>this.handleScrollTo(600)} >Projects</li> */}
-                        {/* <li onClick={()=>this.handleScrollToFromBottom(2500)} >About me</li> */}
-                        {/* <li onClick={this.handleScroll}><a href="#home">Home</a></li> */}
+                        <li className='home' onClick={() => this.handleScrollTo(0)}
+                        // eslint-disable-next-line
+                        > <a href="#" onClick={(e) => e.preventDefault()}>Home</a></li>
                         <li onClick={this.handleScroll}><a href="#projects">Projects</a></li>
                         <li onClick={this.handleScroll}><a href="#aboutme">About me</a></li>
                         <li onClick={this.handleScroll}><a href="#contact">Contact</a></li>
-                        {/* <li data-scroll onClick={()=>this.handleScrollTo(3700)} >Contact</li> */}
                     </ul>
                     <ul className='icons'>
-                        <li><a href="https://github.com/donatelek"><i class="fab fa-github"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/jakub-sznajder"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><i class="fas fa-at" onClick={this.handleCopy}></i></li>
-
-                        <textarea style={{ position: 'absolute', right: '-1000px' }}
+                        <li><a href="https://github.com/donatelek"><i className="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/jakub-sznajder"><i className="fab fa-linkedin-in"></i></a></li>
+                        <li><i className="fas fa-at" onClick={this.handleCopy}></i></li>
+                        <textarea readOnly style={{ position: 'absolute', right: '-1000px' }}
                             ref={(textarea) => this.textArea = textarea}
                             value='donatelek92@gmail.com'
                         />

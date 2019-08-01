@@ -66,7 +66,6 @@ export default class Contact extends Component {
       return
     }
 
-    const receiv = 'donatelek92@gmail.com'
     const temp = 'contact_template'
     this.sendFeedback(
       temp,

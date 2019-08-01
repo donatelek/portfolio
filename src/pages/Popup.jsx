@@ -6,7 +6,7 @@ class Popup extends Component {
             if (this.props.projectNumber === 1) {
                 return (
                     <div className="popup" style={{ overflowX: 'hidden' }}>
-                        <div className="close"><i class="far fa-times-circle" onClick={() => this.props.handleChangePage('main')} ></i></div>
+                        <div className="close"><i className="far fa-times-circle" onClick={() => this.props.handleChangePage('main')} ></i></div>
                         <h1>Crypto Tool</h1>
                         <h2>All-in-one tool for cryptocurrency traders</h2>
                         <div className="technologies">
@@ -30,14 +30,14 @@ class Popup extends Component {
                                 <li>VScode</li>
                             </ul>
                         </div>
-                        <a href='https://crypto-bit-trader.herokuapp.com/' className="live">Check Live <i class="fas fa-long-arrow-alt-right"></i></a>
-                        <a href='https://github.com/donatelek/Crypto-Bit-Trader' className="github">View On Github <i class="fas fa-long-arrow-alt-right"></i></a>
+                        <a href='https://crypto-bit-trader.herokuapp.com/' className="live">Check Live <i className="fas fa-long-arrow-alt-right"></i></a>
+                        <a href='https://github.com/donatelek/Crypto-Bit-Trader' className="github">View On Github <i className="fas fa-long-arrow-alt-right"></i></a>
                     </div>
                 )
             } else if (this.props.projectNumber === 3) {
                 return (
                     <div className="popup" style={{ overflowX: 'hidden' }}>
-                        <div className="close"><i class="far fa-times-circle" onClick={() => this.props.handleChangePage('main')} ></i></div>
+                        <div className="close"><i className="far fa-times-circle" onClick={() => this.props.handleChangePage('main')} ></i></div>
                         <h1>PH-STORE</h1>
                         <h2>E-Commerce shop with mobile phones</h2>
                         <div className="technologies">
@@ -61,14 +61,14 @@ class Popup extends Component {
                                 <li>VScode</li>
                             </ul>
                         </div>
-                        <a href='https://ph-store.herokuapp.com/' className="live">Check Live <i class="fas fa-long-arrow-alt-right"></i></a>
-                        <a href='https://github.com/donatelek/PH-STORE' className="github">View On Github <i class="fas fa-long-arrow-alt-right"></i></a>
+                        <a href='https://ph-store.herokuapp.com/' className="live">Check Live <i className="fas fa-long-arrow-alt-right"></i></a>
+                        <a href='https://github.com/donatelek/PH-STORE' className="github">View On Github <i className="fas fa-long-arrow-alt-right"></i></a>
                     </div>
                 )
             } else if (this.props.projectNumber === 4) {
                 return (
                     <div className="popup" style={{ overflowX: 'hidden' }}>
-                        <div className="close"><i class="far fa-times-circle" onClick={() => this.props.handleChangePage('main')} ></i></div>
+                        <div className="close"><i className="far fa-times-circle" onClick={() => this.props.handleChangePage('main')} ></i></div>
                         <h1>Portfolio</h1>
                         <h2>My personal portfolio</h2>
                         <div className="technologies">
@@ -90,8 +90,8 @@ class Popup extends Component {
                                 <li>VScode</li>
                             </ul>
                         </div>
-                        <a href='https://jakub-sznajder.herokuapp.com' className="live">Check Live <i class="fas fa-long-arrow-alt-right"></i></a>
-                        <a href='https://github.com/donatelek/Portfolio' className="github">View On Github <i class="fas fa-long-arrow-alt-right"></i></a>
+                        <a href='https://jakub-sznajder.herokuapp.com' className="live">Check Live <i className="fas fa-long-arrow-alt-right"></i></a>
+                        <a href='https://github.com/donatelek/Portfolio' className="github">View On Github <i className="fas fa-long-arrow-alt-right"></i></a>
                     </div>
                 )
             } else if (this.props.projectNumber === 2) {
@@ -120,9 +120,9 @@ class Popup extends Component {
                                 <li>VSCode</li>
                             </ul>
                         </div>
-                        <a href='https://edmchallenge.herokuapp.com/' className="live">Check Live <i class="fas fa-long-arrow-alt-right"></i></a>
-                        <a href='https://github.com/donatelek/EDM-Challenge' className="github">View On Github <i class="fas fa-long-arrow-alt-right"></i></a>
-                        <div className="close"><i class="far fa-times-circle" onClick={() => this.props.handleChangePage('main')} ></i></div>
+                        <a href='https://edmchallenge.herokuapp.com/' className="live">Check Live <i className="fas fa-long-arrow-alt-right"></i></a>
+                        <a href='https://github.com/donatelek/EDM-Challenge' className="github">View On Github <i className="fas fa-long-arrow-alt-right"></i></a>
+                        <div className="close"><i className="far fa-times-circle" onClick={() => this.props.handleChangePage('main')} ></i></div>
 
                     </div>
                 )

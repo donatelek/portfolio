@@ -13,7 +13,7 @@ const Main = () => {
     <main className='main'>
       <h1>Hello, I'm Jakob</h1>
       <h2>Front-end Developer from Poland</h2>
-      <h3 onClick={handleScrollContact} >Hire me <i class="fas fa-long-arrow-alt-right"></i></h3>
+      <h3 onClick={handleScrollContact} >Hire me <i className="fas fa-long-arrow-alt-right"></i></h3>
     </main>
   );
 }
