@@ -7,15 +7,14 @@ class Popup extends Component {
                 return (
                     <div className="popup" style={{ overflowX: 'hidden' }}>
                         <div className="close"><i class="far fa-times-circle" onClick={() => this.props.handleChangePage('main')} ></i></div>
-                        <h1>EDM Challenge</h1>
-                        <h2>Quiz site for Electronic dance music fans</h2>
+                        <h1>Crypto Tool</h1>
+                        <h2>All-in-one tool for cryptocurrency traders</h2>
                         <div className="technologies">
-                            <h1 className='title'>Used tools and technologies</h1>
                             <ul className='front'>
                                 <h1>Front-End</h1>
                                 <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Javascript</li>
+                                <li>SCSS</li>
+                                <li>JAVASCRIPT</li>
                                 <li>React</li>
                                 <li>Redux</li>
                             </ul>
@@ -28,21 +27,21 @@ class Popup extends Component {
                             <ul className='tools'>
                                 <h1>Used tools</h1>
                                 <li>Illustrator</li>
-                                <li>VSCode</li>
+                                <li>VScode</li>
                             </ul>
                         </div>
-                        <a href='https://edmchallenge.herokuapp.com/' className="live">Check Live <i class="fas fa-long-arrow-alt-right"></i></a>
-                        <a href='https://github.com/donatelek/EDM-Challenge' className="github">View On Github <i class="fas fa-long-arrow-alt-right"></i></a>
+                        <a href='https://crypto-bit-trader.herokuapp.com/' className="live">Check Live <i class="fas fa-long-arrow-alt-right"></i></a>
+                        <a href='https://github.com/donatelek/Crypto-Bit-Trader' className="github">View On Github <i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>
                 )
-            } else if (this.props.projectNumber === 2) {
+            } else if (this.props.projectNumber === 3) {
                 return (
                     <div className="popup" style={{ overflowX: 'hidden' }}>
                         <div className="close"><i class="far fa-times-circle" onClick={() => this.props.handleChangePage('main')} ></i></div>
                         <h1>PH-STORE</h1>
                         <h2>E-Commerce shop with mobile phones</h2>
                         <div className="technologies">
-                            <h1 className='title'>Used tools and technologies</h1>
+                            {/* <h1 className='title'>Used tools and technologies</h1> */}
                             <ul className='front'>
                                 <h1>Front-End</h1>
                                 <li>HTML</li>
@@ -66,14 +65,14 @@ class Popup extends Component {
                         <a href='https://github.com/donatelek/PH-STORE' className="github">View On Github <i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>
                 )
-            } else if (this.props.projectNumber === 3) {
+            } else if (this.props.projectNumber === 4) {
                 return (
                     <div className="popup" style={{ overflowX: 'hidden' }}>
                         <div className="close"><i class="far fa-times-circle" onClick={() => this.props.handleChangePage('main')} ></i></div>
                         <h1>Portfolio</h1>
                         <h2>My personal portfolio</h2>
                         <div className="technologies">
-                            <h1 className='title'>Used tools and technologies</h1>
+                            {/* <h1 className='title'>Used tools and technologies</h1> */}
                             <ul className='front'>
                                 <h1>Front-End</h1>
                                 <li>HTML</li>
@@ -95,19 +94,17 @@ class Popup extends Component {
                         <a href='https://github.com/donatelek/Portfolio' className="github">View On Github <i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>
                 )
-            } else if (this.props.projectNumber === 4) {
+            } else if (this.props.projectNumber === 2) {
                 return (
                     <div className="popup" style={{ overflowX: 'hidden' }}>
-                        <div className="close"><i class="far fa-times-circle" onClick={() => this.props.handleChangePage('main')} ></i></div>
-                        <h1>Crypto Tool</h1>
-                        <h2>All-in-one tool for cryptocurrency traders</h2>
+                        <h1>EDM Challenge</h1>
+                        <h2>Quiz site for Electronic dance music fans</h2>
                         <div className="technologies">
-                            <h1 className='title'>Used tools and technologies</h1>
                             <ul className='front'>
                                 <h1>Front-End</h1>
                                 <li>HTML</li>
-                                <li>SCSS</li>
-                                <li>JAVASCRIPT</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
                                 <li>React</li>
                                 <li>Redux</li>
                             </ul>
@@ -115,16 +112,18 @@ class Popup extends Component {
                                 <h1>Back-End</h1>
                                 <li>Node.js</li>
                                 <li>Express.js</li>
-                                <li>SQL</li>
+                                <li>PostgreSQL</li>
                             </ul>
                             <ul className='tools'>
                                 <h1>Used tools</h1>
                                 <li>Illustrator</li>
-                                <li>VScode</li>
+                                <li>VSCode</li>
                             </ul>
                         </div>
-                        <a className="live">In build <i class="fas fa-long-arrow-alt-right"></i></a>
-                        <a href='https://github.com/donatelek/Crypto-Bit-Trader' className="github">View On Github <i class="fas fa-long-arrow-alt-right"></i></a>
+                        <a href='https://edmchallenge.herokuapp.com/' className="live">Check Live <i class="fas fa-long-arrow-alt-right"></i></a>
+                        <a href='https://github.com/donatelek/EDM-Challenge' className="github">View On Github <i class="fas fa-long-arrow-alt-right"></i></a>
+                        <div className="close"><i class="far fa-times-circle" onClick={() => this.props.handleChangePage('main')} ></i></div>
+
                     </div>
                 )
             }

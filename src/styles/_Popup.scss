@@ -120,17 +120,33 @@ div.popup {
             font-size: 20px;
             padding-top: 20px;
         }
+
+        @include B-phone {
+            // margin: 0 !important;
+            // padding: 50px 0 !important;
+        }
+
+        @include phone {
+            margin-top: 25px;
+        }
     }
 
     h2 {
-        margin-bottom: 25px;
+        // margin-bottom: 50px;
         padding-bottom: 25px;
 
         @include MM-phone {
-            letter-spacing: 0.5px;
+            letter-spacing: 0px;
             margin: 0;
+            color: rgb(71, 71, 71);
+            font-weight: unset;
+            font-size: 20px;
             padding: 0;
 
+        }
+
+        @include phone {
+            font-size: 15px;
         }
 
         @include heightPhone {
@@ -140,9 +156,9 @@ div.popup {
     }
 
     .technologies {
-        position: absolute;
+        position: relative;
         left: 50%;
-        top: 55%;
+        top: 40%;
         transform: translate(-50%, -50%);
         width: 600px;
         height: 400px;
@@ -152,41 +168,47 @@ div.popup {
             top: 360px;
         }
 
-        h1.title {
-            padding: 0;
-            font-size: 24px;
-            margin-top: 25px;
-            width: 600px;
-            margin-bottom: 25px;
-
-            @include MS-desktop {
-                display: inline-block;
-                width: 500px;
-                right: 0;
-            }
-
-            @include B-tablet {
-                margin-bottom: 50px;
-            }
-
-            @include MM-phone {
-                margin-bottom: 10px;
-                margin-top: 60px;
-                font-size: 20px;
-                letter-spacing: 1px;
-            }
-
-            @include phone {
-                font-size: 15px;
-            }
+        @include B-phone {
+            bottom: -250px;
+            top: unset;
+            // transform: translate(-50%, -50%);
         }
+
+        // h1.title {
+        //     padding: 0;
+        //     font-size: 24px;
+        //     margin-top: 25px;
+        //     width: 600px;
+        //     margin-bottom: 25px;
+
+        //     @include MS-desktop {
+        //         display: inline-block;
+        //         width: 500px;
+        //         right: 0;
+        //     }
+
+        //     @include B-tablet {
+        //         margin-bottom: 50px;
+        //     }
+
+        //     @include MM-phone {
+        //         margin-bottom: 10px;
+        //         margin-top: 60px;
+        //         font-size: 20px;
+        //         letter-spacing: 1px;
+        //     }
+
+        //     @include phone {
+        //         font-size: 15px;
+        //     }
+        // }
 
         ul.front {
             display: flex;
             position: absolute;
             left: 0;
             width: 200px;
-            height: 200px;
+            height: 250px;
             flex-direction: column;
             justify-content: flex-start;
 
@@ -217,7 +239,7 @@ div.popup {
                 }
 
                 @include phone {
-                    font-size: 16px;
+                    font-size: 14px;
                     margin-bottom: 0;
                 }
             }
@@ -231,9 +253,8 @@ div.popup {
                 border: none;
 
 
-
                 @include phone {
-                    font-size: 14px;
+                    font-size: 13px;
                     padding: 5px 0;
                 }
             }
@@ -275,7 +296,7 @@ div.popup {
                 }
 
                 @include phone {
-                    font-size: 16px;
+                    font-size: 14px;
                     margin-bottom: 0;
                 }
             }
@@ -289,7 +310,7 @@ div.popup {
                 border: none;
 
                 @include phone {
-                    font-size: 14px;
+                    font-size: 13px;
                     padding: 5px 0;
                 }
             }
@@ -329,7 +350,7 @@ div.popup {
                 }
 
                 @include phone {
-                    font-size: 16px;
+                    font-size: 14px;
                     margin-bottom: 0;
                 }
             }
@@ -343,7 +364,7 @@ div.popup {
                 border: none;
 
                 @include phone {
-                    font-size: 14px;
+                    font-size: 13px;
                     padding: 5px 0;
                 }
             }
