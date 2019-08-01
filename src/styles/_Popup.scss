@@ -127,7 +127,6 @@ div.popup {
         padding-bottom: 25px;
 
         @include MM-phone {
-            // background-color: red;
             letter-spacing: 0.5px;
             margin: 0;
             padding: 0;
@@ -148,18 +147,6 @@ div.popup {
         width: 600px;
         height: 400px;
         color: rgb(51, 51, 51);
-        // background-color: red;
-
-        @include B-tablet {
-            // width: 600px;
-            // height: 230px;
-            // position: absolute;
-            // top: 480px;
-            // left: 50%;
-            // transform: translate(-50%, -50%);
-        }
-
-
 
         @include heightPhone {
             top: 360px;
@@ -176,17 +163,13 @@ div.popup {
                 display: inline-block;
                 width: 500px;
                 right: 0;
-                // margin-left: 135px;
             }
 
             @include B-tablet {
-                // margin: 0;
-                // margin-top: 0px;
                 margin-bottom: 50px;
             }
 
             @include MM-phone {
-                // background-color: red;
                 margin-bottom: 10px;
                 margin-top: 60px;
                 font-size: 20px;
@@ -207,18 +190,7 @@ div.popup {
             flex-direction: column;
             justify-content: flex-start;
 
-            @include MS-desktop {
-                // width: 130px;
-                // right: 70px;
-            }
-
-            @include B-tablet {
-                // margin: 0;
-                // margin-left: 100px;
-            }
-
             @include MM-phone {
-                // background-color: red;
                 width: 150px;
                 left: 50%;
                 transform: translateX(-150%);
@@ -227,7 +199,6 @@ div.popup {
             @include phone {
                 width: 95px;
                 letter-spacing: 0;
-                // margin-left: 160px;
             }
 
             h1 {
@@ -246,7 +217,7 @@ div.popup {
                 }
 
                 @include phone {
-                    font-size: 17px;
+                    font-size: 16px;
                     margin-bottom: 0;
                 }
             }
@@ -278,22 +249,8 @@ div.popup {
             flex-direction: column;
             justify-content: flex-start;
 
-            @include MS-desktop {
-                // width: 130px;
-                // right: 0px;
-
-            }
-
-            @include B-tablet {
-                // margin: 0;
-                // margin-left: 35px;
-
-            }
-
             @include MM-phone {
-                // background-color: red;
                 width: 150px;
-                // margin-left: 55px;
                 left: 50%;
                 transform: translateX(-50%);
             }
@@ -318,7 +275,7 @@ div.popup {
                 }
 
                 @include phone {
-                    font-size: 17px;
+                    font-size: 16px;
                     margin-bottom: 0;
                 }
             }
@@ -347,18 +304,7 @@ div.popup {
             flex-direction: column;
             justify-content: flex-start;
 
-            @include MS-desktop {
-                // width: 130px;
-                // right: -70px;
-            }
-
-            @include B-tablet {
-                // margin: 0;
-                // margin-left: -30px;
-            }
-
             @include MM-phone {
-                // background-color: red;
                 width: 150px;
                 left: 50%;
                 transform: translateX(50%);
@@ -367,7 +313,6 @@ div.popup {
             @include phone {
                 width: 95px;
                 letter-spacing: 0;
-                // margin-left: 160px;
             }
 
             h1 {
@@ -384,7 +329,7 @@ div.popup {
                 }
 
                 @include phone {
-                    font-size: 17px;
+                    font-size: 16px;
                     margin-bottom: 0;
                 }
             }
