@@ -59,6 +59,8 @@ class Popup extends Component {
                                 <h1>Used tools</h1>
                                 <li>Illustrator</li>
                                 <li>VScode</li>
+                                <li>Jest</li>
+                                <li>Enzyme</li>
                             </ul>
                         </div>
                         <a href='https://ph-store.herokuapp.com/' className="live">Check Live <i className="fas fa-long-arrow-alt-right"></i></a>

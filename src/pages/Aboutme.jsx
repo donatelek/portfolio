@@ -9,6 +9,8 @@ import illustrator from '../img/illustrator.png'
 import vsc from '../img/vsc.png'
 import express from '../img/express.png'
 import redux from '../img/redux.png'
+import jest from '../img/jest.png'
+import enzyme from '../img/enzyme.png'
 import github from '../img/github.svg'
 import { Fade } from 'react-reveal'
 
@@ -77,6 +79,14 @@ const Aboutme = () => {
             <li>
               <img src={vsc} alt="" />
               <div>VSC</div>
+            </li>
+            <li>
+              <img src={jest} alt="" />
+              <div>Jest</div>
+            </li>
+            <li>
+              <img src={enzyme} alt="" />
+              <div>Enzyme</div>
             </li>
           </ul>
         </ul>
