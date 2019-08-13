@@ -3,7 +3,7 @@ import React from 'react';
 const Main = () => {
   const handleScrollContact = () => {
     window.scrollTo({
-      top: 4000,
+      top: 6000,
       left: 0,
       behavior: 'smooth'
     });

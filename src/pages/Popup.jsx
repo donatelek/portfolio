@@ -14,7 +14,7 @@ class Popup extends Component {
                                 <h1>Front-End</h1>
                                 <li>HTML</li>
                                 <li>SCSS</li>
-                                <li>JAVASCRIPT</li>
+                                <li>Javascript</li>
                                 <li>React</li>
                                 <li>Redux</li>
                             </ul>
@@ -41,7 +41,6 @@ class Popup extends Component {
                         <h1>PH-STORE</h1>
                         <h2>E-Commerce shop with mobile phones</h2>
                         <div className="technologies">
-                            {/* <h1 className='title'>Used tools and technologies</h1> */}
                             <ul className='front'>
                                 <h1>Front-End</h1>
                                 <li>HTML</li>
@@ -74,7 +73,6 @@ class Popup extends Component {
                         <h1>Portfolio</h1>
                         <h2>My personal portfolio</h2>
                         <div className="technologies">
-                            {/* <h1 className='title'>Used tools and technologies</h1> */}
                             <ul className='front'>
                                 <h1>Front-End</h1>
                                 <li>HTML</li>
@@ -88,7 +86,6 @@ class Popup extends Component {
                             </ul>
                             <ul className='tools'>
                                 <h1>Used tools</h1>
-                                <li>Illustrator</li>
                                 <li>VScode</li>
                             </ul>
                         </div>
@@ -118,7 +115,6 @@ class Popup extends Component {
                             </ul>
                             <ul className='tools'>
                                 <h1>Used tools</h1>
-                                <li>Illustrator</li>
                                 <li>VSCode</li>
                             </ul>
                         </div>
