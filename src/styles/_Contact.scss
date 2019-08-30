@@ -120,6 +120,7 @@ div.contact {
         width: 150px;
         border: none;
         margin-top: 25px;
+        cursor: pointer;
 
         @include phone {
             width: 130px;

@@ -79,8 +79,9 @@ class App extends Component {
   render() {
     return (
       <>
+        <Nav handleChangePage={this.handleChangePage} page={this.state.page} isTop={this.state.isTop} />
         <div style={{ overflowX: 'hidden' }}>
-          <Nav handleChangePage={this.handleChangePage} page={this.state.page} isTop={this.state.isTop} />
+
           <Main />
           <Projects handleChangePage={this.handleChangePage} page={this.state.page} />
           <Aboutme />

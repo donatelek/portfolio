@@ -390,15 +390,13 @@ section.Projects {
         }
 
         li:hover {
-            border: 15px solid white;
-            background-size: 120% 120%;
+            // border: 15px solid white;
+            // background-size: 120% 120%;
 
             @include tablet {
                 border: none;
                 background-position: center;
-                background-size: 110%; // width: 100vw;
-                // height: 300px;
-                // margin: 0;
+                background-size: 110%;
             }
 
             @include phone {

@@ -511,6 +511,7 @@ div.contact input[type=submit] {
   width: 150px;
   border: none;
   margin-top: 25px;
+  cursor: pointer;
 }
 
 @media (max-width: 440px) {
@@ -2029,11 +2030,6 @@ section.Projects ul li:hover div.aboutA {
   section.Projects ul li:hover div.aboutA {
     display: none;
   }
-}
-
-section.Projects ul li:hover {
-  border: 15px solid white;
-  background-size: 120% 120%;
 }
 
 @media (max-width: 812px) {
